@@ -5,7 +5,7 @@ Thank you for considering contributing. This RFC depends on community validation
 ## Three ways to contribute
 
 1. **Issues** — file via the [Issue templates](.github/ISSUE_TEMPLATE/) for substrate additions, substrate corrections, cross-walk validations, and citation qualifier flags
-2. **Pull Requests** — propose direct changes to RFC.md, SUBSTRATES.md, or EXAMPLES/
+2. **Pull Requests** — propose direct changes to COSAI-FOCUSED-CROSSWALK.md, SUBSTRATES.md, or EXAMPLES/
 3. **Discussions** — for open-ended cross-walk questions or community contribution coordination
 
 ## Citation discipline (REQUIRED)
@@ -51,7 +51,7 @@ Contributions that include private content from these substrates will be rejecte
 
 4. **Citation qualifier flags** — Where a draft standard is cited without the correct qualifier, flag the issue.
 
-5. **Gap-to-contribute slots** — Which Q3/Q4/2027 contribution slots in RFC.md are already in flight elsewhere that the cross-walk has missed? Which are no longer open?
+5. **Gap-to-contribute slots** — Which Q3/Q4/2027 contribution slots in COSAI-FOCUSED-CROSSWALK.md are already in flight elsewhere that the cross-walk has missed? Which are no longer open?
 
 6. **Additional worked examples** — The EXAMPLES/ folder has 3 worked cross-walks (action-class authority / chain audit / observability). Other axes deserve worked examples too — lifecycle, blast radius, immutability, governance-role.
 

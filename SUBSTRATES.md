@@ -2,7 +2,7 @@
 
 Quick-reference index of every substrate in the cross-walk with canonical URL + status qualifier + Mayur's contribution position (where applicable).
 
-For full schema-property mapping see [RFC.md](RFC.md). For worked examples see [EXAMPLES/](EXAMPLES/).
+For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-CROSSWALK.md). For worked examples see [EXAMPLES/](EXAMPLES/).
 
 ---
 

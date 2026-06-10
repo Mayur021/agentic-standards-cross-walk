@@ -33,8 +33,7 @@ This artifact names it explicitly and cross-walks it so contributors across stan
 
 | File | What it is | Audience |
 |---|---|---|
-| [RFC.md](RFC.md) | **Primary artifact** — the full research RFC with substrate inventory + worked examples + contribution slots | Anyone contributing to or citing standards across the 12 families |
-| [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-CROSSWALK.md) | **Condensed view** — CoSAI WS4 / Risk Map / WS4 #99 focused schema cross-walk for quick scan | Folks working on CoSAI integration |
+| [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-CROSSWALK.md) | **Primary artifact** — condensed schema cross-walk focused on CoSAI WS4 / Risk Map / WS4 #99 integration | Anyone contributing to CoSAI / AISVS / CSA / SPDX agentic work |
 | [SUBSTRATES.md](SUBSTRATES.md) | Index of all 89 substrate references with canonical URLs + status qualifiers | Validators / contributors checking completeness |
 | [EXAMPLES/](EXAMPLES/) | 3 standalone cross-walk worked examples (action-class authority / chain audit / observability) | Citers / educators |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution discipline — citation qualifier rules + joint-credit anchors + how-to-file | Anyone opening an Issue or PR |

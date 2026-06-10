@@ -41,7 +41,7 @@ The structural axis of action-class authority recurs across the standards landsc
 - Add the cross-walk explicitly to CSA AICM v1.0 control catalog
 - File IETF Internet-Draft `draft-agnihotri-action-class-authority-00` (Q3-Q4 2026)
 
-See [RFC.md Section 5](../RFC.md#5-open-contribution-slots) for the full slot list.
+See [COSAI-FOCUSED-CROSSWALK.md](../COSAI-FOCUSED-CROSSWALK.md) "Open contribution slots" section for the full slot list.
 
 ## Citation
 
