@@ -1,12 +1,12 @@
-# Substrate Index (89 references across 12 families)
+# Substrate Index
 
-Quick-reference index of every substrate in the cross-walk with canonical URL + status qualifier + Mayur's contribution position (where applicable).
+Quick-reference index of every substrate in the cross-walk with canonical URL + status qualifier.
 
 For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-CROSSWALK.md). For worked examples see [EXAMPLES/](EXAMPLES/).
 
 ---
 
-## CSA family (11)
+## CSA family
 
 | ID | Name | URL | Status |
 |---|---|---|---|
@@ -22,7 +22,7 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 | S04 | CSA AI Safety Initiative | cloudsecurityalliance.org/ai-safety-initiative | Active program |
 | S05 | CSA IAM WG | private CSA channels | WG-level |
 
-## NIST family (8)
+## NIST family
 
 | ID | Name | URL | Status |
 |---|---|---|---|
@@ -35,7 +35,7 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 | S11b | NIST CAISI AI Agent Standards Initiative | nist.gov/caisi + nist.gov/artificial-intelligence/nist-ai-consortium | Renamed CAISI May 29 2026; AI Agent Standards Initiative Feb 17 2026 |
 | S11c | NIST AI repos (usnistgov) | github.com/usnistgov/dioptra + agentic-research-evaluation-probes + AFL-agent + trojai-baseline-pruning + AIPD_TEVV + NIST-AI-Consortium | Active |
 
-## CoSAI family (11)
+## CoSAI family
 
 | ID | Name | URL | Status |
 |---|---|---|---|
@@ -51,7 +51,7 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 | S18b | CoSAI WS4 #113 Multimodal Agentic Security RFC | github.com/cosai-oasis/ws4-secure-design-agentic-systems/issues/113 | Accepted 2026-06-04 |
 | S18c | CoSAI TSC + CodeGuard + Resources | github.com/cosai-oasis/cosai-tsc + project-codeguard + resources | Active |
 
-## OWASP family (14)
+## OWASP family
 
 | ID | Name | URL | Status |
 |---|---|---|---|
@@ -70,7 +70,7 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 | S25 | OWASP AIVSS (Mayur Issue #36) | github.com/OWASP/www-project-artificial-intelligence-vulnerability-scoring-system | Calculator V4 in development |
 | S25b | OWASP AI Testing Guide + AI Security & Privacy Guide + AIBOM + LLM Verification Standard + ML Security Top 10 | (various github.com/OWASP/ repos) | Varied maturity |
 
-## SPDX family (8)
+## SPDX family
 
 | ID | Name | URL | Status |
 |---|---|---|---|
@@ -83,7 +83,7 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 | S30c | SPDX 3.1-RC1 PR #1249 + Issue #1247 (AI Prompt v2) | github.com/spdx/spdx-3-model/pull/1249 | Open PR |
 | S30d | SPDX 3.1-RC1 active work (#1280, #1262, #1239, #1255, #1253, #1266) | github.com/spdx/spdx-3-model | Open |
 
-## Government / regulatory family (5)
+## Government / regulatory family
 
 | ID | Name | URL | Status |
 |---|---|---|---|
@@ -93,7 +93,7 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 | S34 | G7 BSI SBOM for AI minimum elements | bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf + cisa.gov mirror | Published 12 May 2026 |
 | S34b | EU AI Act (full) | europa.eu | Adopted; in enforcement |
 
-## Identity protocol family (11)
+## Identity protocol family
 
 | ID | Name | URL | Status |
 |---|---|---|---|
@@ -119,15 +119,7 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 | S43 | Threat Modeling for AI Asset-Centric | arxiv.org/abs/2505.06315 | Published May 2025 |
 | S44 | Model Openness Framework | arxiv.org/abs/2403.13784 | Published March 2024 |
 
-## Substrate-13 / 14 / 16 (public references only)
-
-| ID | Name | Public reference status |
-|---|---|---|
-| S45 | Anthropic Fable 5 + Mythos 5 architecture | Cited from public Anthropic blog + public thesis posts only |
-| S46 | agentrust-io (Imran Siddique / OPAQUE) | Pre-launch private until 2026-06-23; cite only from public CoSAI WS4 #99 + github.com/agentrust-io/.github profile |
-| S47 | EQTY Lab (Rithikha Rajamohan / Cameron Fyfe) | Cite from public CoSAI WS1 demos + public AgentCard demo + public SPDX-AI Slack joins only |
-
-## Industry tooling (3)
+## Industry tooling
 
 | ID | Name | URL | Status |
 |---|---|---|---|
