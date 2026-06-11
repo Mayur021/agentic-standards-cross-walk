@@ -133,95 +133,79 @@ Where this cross-walk maps into ongoing CoSAI work:
 
 ---
 
-## Mayur work × CoSAI Ecosystem Fit Map
+## CoSAI Ecosystem Fit Map
 
-This section maps where this preparation lens slots into the full CoSAI ecosystem. The cross-walk does not propose new CoSAI artifacts; it cross-references the standards landscape that CoSAI artifacts are already composing into. Each row below shows the CoSAI artifact, how the cross-walk supports it, and the natural contribution slot.
+This section maps how the cross-walk composes with the full CoSAI ecosystem. The cross-walk does not propose new CoSAI artifacts; it cross-references the standards landscape that CoSAI artifacts are already composing into.
 
 ### TSC — Principles for Agentic Systems (parent doc)
 
-| CoSAI artifact | How the cross-walk supports it | Contribution slot |
-|---|---|---|
-| `tsc-meeting-minutes`, `intro-agentic-security-principles.md`, `security-principles-for-agentic-systems.md` (Secure-by-Design parent doc), `the-future-of-agentic-security.md` | The 8-axis architectural taxonomy (identity / authority / chain / blast-radius / lifecycle / immutability / observability / governance-role) operationalizes Secure-by-Design at property-level. Each TSC principle resolves to one or more A-axes plus mitigated H-categories. | None proposed (parent-doc level work, not extension surface) |
+| CoSAI artifact | How the cross-walk composes |
+|---|---|
+| `tsc-meeting-minutes`, `intro-agentic-security-principles.md`, `security-principles-for-agentic-systems.md` (Secure-by-Design parent doc), `the-future-of-agentic-security.md` | The 8-axis architectural taxonomy (identity / authority / chain / blast-radius / lifecycle / immutability / observability / governance-role) operationalizes Secure-by-Design at property-level. Each TSC principle resolves to one or more A-axes plus mitigated H-categories. |
 
 ### WS1 — Software Supply Chain for AI
 
-| CoSAI artifact | How the cross-walk supports it | Contribution slot |
-|---|---|---|
-| `risks-and-controls-for-the-ai-supply-chain-v1` + `signing-ml-artifacts` (stable papers) | Cross-walk catalogs SPDX 3.0.1 AI Profile (AIPackage), SPDX 3.1-RC1 PRs #1259/#1267/#1257, G7 BSI SBOM for AI 7 core clusters, EU AI Act Article 53(1)(d) template — all directly compose with WS1 supply-chain controls | Future: cross-walk between WS1 risks-and-controls v1 + SPDX 3.1-RC1 dataset-size properties (token count, item count, content duration) for EU AI Act alignment |
-| 9 open RFCs in WS1 (mostly Q1-25 contributions, slow pipeline) | Each WS1 RFC maps onto specific A-axes (A1 Identity, A5 Lifecycle, A6 Immutability) and H-categories (H8 Information Integrity, H12 Value Chain) — cross-walk provides the property-level lookup | RFC-by-RFC engagement opportunity when WS1 reopens active review |
+| CoSAI artifact | How the cross-walk composes |
+|---|---|
+| `risks-and-controls-for-the-ai-supply-chain-v1` + `signing-ml-artifacts` (stable papers) | Cross-walk catalogs SPDX 3.0.1 AI Profile (AIPackage), SPDX 3.1-RC1 PRs #1259/#1267/#1257, G7 BSI SBOM for AI 7 core clusters, EU AI Act Article 53(1)(d) template. All directly compose with WS1 supply-chain controls. |
+| 9 open RFCs in WS1 | Each WS1 RFC maps onto specific A-axes (A1 Identity, A5 Lifecycle, A6 Immutability) and H-categories (H8 Information Integrity, H12 Value Chain). The cross-walk provides the property-level lookup. |
 
 ### WS2 — Defenders (Preparing Defenders for a Changing Cybersecurity Landscape)
 
-| CoSAI artifact | How the cross-walk supports it | Contribution slot |
-|---|---|---|
-| `preparing-defenders-of-ai-systems` (flagship paper), `AI-Incident-Response.md` v1.0, `AI-Shared-Responsibility-Framework` (May 2026) | Cross-walk's observability axis (A7) + AARM tamper-evident receipts + OWASP AOS AgBOM (extends CycloneDX/SWID/SPDX) directly compose with WS2 Telemetry framework (OCSF-aligned). Shared Responsibility Framework anchors A8 governance-role × persona mapping | Future: AOS AgBOM ↔ WS2 Telemetry framework cross-walk (post-AOS v1) |
-| 12 open issues (AI-SPM, AI CAPEC, AI Telemetry OCSF, Behavioral Control Mechanisms) | Each composes with cross-walk's A4 Blast radius + A7 Observability + A8 Governance-role | Watch for substantive openings on specific Issues |
+| CoSAI artifact | How the cross-walk composes |
+|---|---|
+| `preparing-defenders-of-ai-systems` (flagship paper), `AI-Incident-Response.md` v1.0, `AI-Shared-Responsibility-Framework` (May 2026) | Cross-walk's observability axis (A7) + AARM tamper-evident receipts + OWASP AOS AgBOM (extends CycloneDX/SWID/SPDX) directly compose with WS2 Telemetry framework (OCSF-aligned). Shared Responsibility Framework anchors A8 governance-role × persona mapping. |
+| 12 open issues (AI-SPM, AI CAPEC, AI Telemetry OCSF, Behavioral Control Mechanisms) | Each composes with cross-walk's A4 Blast-radius + A7 Observability + A8 Governance-role axes. |
 
 ### WS3 — AI Risk Governance
 
-| CoSAI artifact | How the cross-walk supports it | Contribution slot |
-|---|---|---|
-| WS3 is early-stage scaffolding; 0 merged artifacts; 6 open RFCs | Three high-leverage WS3 RFCs (CoSAI-RM Interactive Risk Assessment #11, CoSAI Persona Model #12, Shared Responsibility Model #10) all directly benefit from cross-walk's 8-axis × 12-risk taxonomy + Raymond Sheh persona taxonomy (arXiv 2511.15763) + WhiteHouse M-24-10 dual-axis (Rights/Safety-impacting) | Future Persona Model RFC #12 + Interactive Risk Assessment RFC #11 substantive contribution paths |
-| SIG-Security-AI-Assisted-Code-Development scope | Composes with OWASP AST10 Agentic Skills Top 10 (Incubator, March 2026) + OWASP Agent-Security-Regression-Harness | Cross-reference in scope refinement |
+| CoSAI artifact | How the cross-walk composes |
+|---|---|
+| WS3 early-stage scaffolding; 6 open RFCs | Three high-leverage WS3 RFCs (CoSAI-RM Interactive Risk Assessment #11, CoSAI Persona Model #12, Shared Responsibility Model #10) compose with cross-walk's 8-axis × 12-risk taxonomy + Raymond Sheh persona taxonomy (arXiv 2511.15763) + WhiteHouse M-24-10 dual-axis (Rights/Safety-impacting). |
+| SIG-Security-AI-Assisted-Code-Development scope | Composes with OWASP AST10 Agentic Skills Top 10 (Incubator, March 2026) + OWASP Agent-Security-Regression-Harness. |
 
 ### WS4 — Secure-Design Agentic Systems
 
-| CoSAI artifact | How the cross-walk supports it | Contribution slot |
-|---|---|---|
-| MCP Security paper v1 (Jan 2026) + V2 in flight (PR #108) | Cross-walk catalogs MCP 2025-11-25 spec (OAuth 2.1 + RFC 9728 + RFC 8707) explicitly distinguishing from community "MCP-I" label | Engaged via PR #108 review comment 2026-06-04 |
-| Agentic Identity & Access Control paper (Apr 2026) | 6-layer pattern → A1 Identity through A7 Observability | Cross-referenced in PR #116 staged comment |
-| `mcp-secure-tool-design.md` (read-only / reversible / commit tool classes + Two-Stage Commit + L1/L2/L3 Autonomy Matrix) | Tool design classes directly compose with action-class authority A2 axis (read-only / reversible / external-reversible / irreversible per AISVS C9.2.6 Proposed for v1.01) | Open extension: 4-class reversibility taxonomy as cross-walk evidence |
-| **PR #117 ADLC Controls Checklist** (open) | Sample control rows already contributed (2026-06-10 comment): ADLC-RT-I01 (manifest-declared action class), I02 (worst-case chain rule per C9.2.7), I04 (AARM evidence stream); ADLC-AD-A01 (signature verification), A03 (reversibility taxonomy alignment) | Follow-on PR within 48h with full Phase 3 + Phase 4 population; add ADLC-RT-D01 "Data Quality Gate" per Microsoft AGT PR #2224 two-layer pattern |
-| **PR #116 Identity Architecture Playbook** (WIP) | 6-layer pattern composes with action-class A2 axis cross-cuts (declared at Layer 2, gated at Layer 4, preserved at Layer 5, audited at Layer 6); cross-references ZeroID (Justin Albrethsen's suggestion) | Staged substantive comment ready (24-48h post Parul/Ian PR #117 response) |
-| **#99 Agent Credentials RFC** (accepted, 8 co-authors) | Cross-walk catalogs A2A v1.0.1 AgentCard JWS+JCS+mTLS, W3C VC 2.0 + DID Core, MCP OAuth model, WIMSE WG drafts, CSA NHI 6-property chain audit schema (internal IAM WG joint with Mallikarjunarao) | 3 substantive comments already; W3C-CG #34 sequenced deployment gated on Lars |
-| **#113 Multimodal Agentic Security RFC** (accepted) | 4-technique taxonomy maps to A4 Blast-radius + A7 Observability axes | Substantive comment 2026-06-05 already deployed |
-| **ADLC SIG** (PR #101 merged 2026-06-01; 7-phase ownership locked 2026-06-03) | Cross-walk supports each of 7 phases via A1-A8 axis × H1-H12 risk mapping; proposed 8th phase System Governance (Doyin Awofodu) extends A8 | Mayur invited to elaborate on PR #117 at SIG ADLC meeting 2026-06-10 |
-| 12-category MCP threat taxonomy (MCP-T1 through T12) | Each threat resolves to one or more cross-walk A-axes + H-categories | Cross-reference in future MCP V2 review |
+| CoSAI artifact | How the cross-walk composes |
+|---|---|
+| MCP Security paper v1 (Jan 2026) + V2 in flight (PR #108) | Cross-walk catalogs MCP 2025-11-25 spec (OAuth 2.1 + RFC 9728 + RFC 8707), explicitly distinguishing from community "MCP-I" label. |
+| Agentic Identity & Access Control paper (Apr 2026) | 6-layer pattern resolves to A1 Identity through A7 Observability. |
+| `mcp-secure-tool-design.md` (read-only / reversible / commit tool classes + Two-Stage Commit + L1/L2/L3 Autonomy Matrix) | Tool design classes compose with action-class authority A2 axis (read-only / reversible / external-reversible / irreversible per OWASP AISVS C9.2.6 Proposed for v1.01). |
+| PR #117 ADLC Controls Checklist (open) | Each control row resolves to a cross-walk substrate. Sample mappings: manifest-declared action class (AISVS C9.2.6), worst-case chain rule (AISVS C9.2.7), AARM evidence stream (Errico arXiv 2602.09433), signature verification (W3C VC 2.0 + DID Core), data-quality gate (Microsoft AGT PR #2224 two-layer pattern). |
+| PR #116 Identity Architecture Playbook (WIP) | 6-layer pattern composes with action-class A2 axis cross-cuts (declared at Layer 2, gated at Layer 4, preserved at Layer 5, audited at Layer 6). Cross-references ZeroID reference implementation. |
+| #99 Agent Credentials RFC (accepted, 8 co-authors) | Cross-walk catalogs A2A v1.0.1 AgentCard (JWS+JCS+mTLS), W3C VC 2.0 + DID Core, MCP OAuth model, WIMSE WG drafts, CSA NHI 6-property chain audit schema (internal IAM WG joint with Mallikarjunarao Sunke). |
+| #113 Multimodal Agentic Security RFC (accepted) | 4-technique taxonomy maps to A4 Blast-radius + A7 Observability axes. |
+| ADLC SIG (PR #101 merged 2026-06-01; 7-phase ownership locked 2026-06-03) | Cross-walk supports each of 7 phases via A1-A8 axis × H1-H12 risk mapping. Proposed 8th phase System Governance (Doyin Awofodu) extends A8. |
+| 12-category MCP threat taxonomy (MCP-T1 through T12) | Each threat resolves to one or more cross-walk A-axes + H-categories. |
 
 ### secure-ai-tooling (Risk Map v1, launched June 2026)
 
-| CoSAI artifact | How the cross-walk supports it | Contribution slot |
-|---|---|---|
-| Risk Map v1: 23 components / 35 controls / 36 risks / 10 personas / 8 lifecycle stages | The 89-substrate × 8-axis × 12-risk cross-walk matrix is exactly the kind of map Risk Map cross-walks against (current cross-walks: MITRE ATLAS, NIST AI RMF, STRIDE, OWASP LLM Top 10, ISO 22989, EU AI Act) | Risk Map could pin to cross-walk SUBSTRATES.md as supplementary reference |
-| **Issue #369 (Bill Stout) — controls → frameworks inversion proposal** (cites SecureControlsFramework, CSA AICM, NIST CPRT) | Cross-walk is LITERALLY the inversion pattern — mapping controls to frameworks across CSA, NIST, CoSAI, OWASP, SPDX, MCP, A2A, WIMSE families. The artifact's structure mirrors what Issue #369 proposes for Risk Map | Substantive comment ready on Issue #369 with cross-walk repo link as supporting evidence |
-| **PR #376 (David LaBianca) — framework mappings to ADR-027 pinned form** | Cross-walk's substrate catalog is the kind of pinned framework mapping ADR-027 enables; could be cited as worked example | Future substantive comment opportunity |
-| PR #362 (ISO 42001 mapping) + PR #329 (ETSI EN 304 223) — open proposals | Cross-walk catalogs ISO/IEC 42001 as substrate (in CSA AICM cross-walk row) | Cross-reference when reviewed |
+| CoSAI artifact | How the cross-walk composes |
+|---|---|
+| Risk Map v1: 23 components / 35 controls / 36 risks / 10 personas / 8 lifecycle stages | The cross-walk matrix follows the same inversion pattern (controls → frameworks) Risk Map cross-walks against (current cross-walks: MITRE ATLAS, NIST AI RMF, STRIDE, OWASP LLM Top 10, ISO 22989, EU AI Act). SUBSTRATES.md could serve as supplementary framework-side index. |
+| Issue #369 (controls → frameworks inversion proposal; cites SecureControlsFramework, CSA AICM, NIST CPRT) | The cross-walk artifact follows the same inversion pattern across CSA, NIST, CoSAI, OWASP, SPDX, MCP, A2A, WIMSE families. |
+| PR #376 (framework mappings to ADR-027 pinned form) | Cross-walk's substrate catalog is the kind of pinned framework mapping ADR-027 enables. |
+| PR #362 (ISO 42001 mapping) + PR #329 (ETSI EN 304 223) — open proposals | Cross-walk catalogs ISO/IEC 42001 as substrate (in CSA AICM cross-walk row). |
 
 ### CoSAI Resources reference library (`cosai-oasis/resources`)
 
-| CoSAI artifact | How the cross-walk supports it | Contribution slot |
-|---|---|---|
-| `ai-incidents/`, `ai-regulations/`, `ai-risks/`, `ai-security-and-risk-frameworks/`, `ai-vulnerabilities/`, `glossary/`, `PERSONA.md` | Cross-walk SUBSTRATES.md is a candidate reference for `ai-security-and-risk-frameworks/` index | Optional contribution PR (smaller than Risk Map; cleaner anchor surface) |
+| CoSAI artifact | How the cross-walk composes |
+|---|---|
+| `ai-incidents/`, `ai-regulations/`, `ai-risks/`, `ai-security-and-risk-frameworks/`, `ai-vulnerabilities/`, `glossary/`, `PERSONA.md` | SUBSTRATES.md is a candidate reference for `ai-security-and-risk-frameworks/` index. |
 
 ### Project CodeGuard (`cosai-oasis/project-codeguard`)
 
-| CoSAI artifact | How the cross-walk supports it | Contribution slot |
-|---|---|---|
-| OWASP-aligned rule sets for AI coding agents | Composes with OWASP AISVS C9 (Autonomous Orchestration), C10 (MCP Security), AST10 Agentic Skills Top 10 | Lower priority; engaged only if natural opening |
+| CoSAI artifact | How the cross-walk composes |
+|---|---|
+| OWASP-aligned rule sets for AI coding agents | Composes with OWASP AISVS C9 (Autonomous Orchestration), C10 (MCP Security), AST10 Agentic Skills Top 10. |
 
 ### CoSAI TSC ↔ Workstreams convergence summary
 
-Across the seven CoSAI organizational artifacts (TSC + 4 workstreams + secure-ai-tooling Risk Map + Resources), the cross-walk's 89 substrates × 8-axis × 12-risk matrix provides:
+Across the seven CoSAI organizational artifacts (TSC + 4 workstreams + secure-ai-tooling Risk Map + Resources), the cross-walk provides:
 
-1. **Property-level lookup** for any CoSAI control needing cross-walk to other standards bodies
-2. **Composability evidence** that CoSAI's principles + WS schemas don't conflict with adjacent standards (CSA / NIST / OWASP / SPDX / IETF / W3C)
-3. **Contribution targeting** — explicit slots where Mayur substrate work composes with CoSAI work
-4. **Convergence narrative** — vendor-neutral framing showing the agentic standards landscape is converging on shared structural primitives, of which CoSAI is one constellation
-
----
-
-## Open contribution slots (for CoSAI consideration)
-
-| Slot | Target | Action |
-|---|---|---|
-| Follow-on PR to #117 with full Phase 3 + 4 control population | CoSAI WS4 ADLC | Mayur to file within 48h (per discussion with Parul) |
-| Risk Map Issue #369 — controls → frameworks inversion | CoSAI secure-ai-tooling | Mayur staged comment in RAG; deploy when path opens |
-| Cross-walk reference attribution in CoSAI Resources repo | github.com/cosai-oasis/resources | Optional contribution; if Parul opens path |
-| AISVS v1.01 promotion of C9.2.6/7 + Issue #828 (C14.2 bridge) | OWASP AISVS | Mayur post v1.0 release 2026-06-24 |
-| CSA NHI v1.0 external publication path | CSA IAM WG | Coordinate with Mallikarjunarao |
-| SPDX 3.1+ action-class authority dimension for AIPackage | spdx-3-model | Future PR Week 6+ (silent-observer norm) |
-| IETF Internet-Draft `draft-agnihotri-action-class-authority-00` | IETF | Q3-Q4 2026 target (WIMSE-adjacent) |
-| OWASP AOS AgBOM ↔ SPDX 3.1+ AIAgent cross-walk | OWASP AOS + SPDX | Future PR post 2026-06-23 |
+1. **Property-level lookup** for any CoSAI control needing cross-walk to other standards bodies.
+2. **Composability evidence** that CoSAI's principles + WS schemas don't conflict with adjacent standards (CSA / NIST / OWASP / SPDX / IETF / W3C).
+3. **Convergence narrative** — vendor-neutral framing showing the agentic standards landscape is converging on shared structural primitives, of which CoSAI is one constellation.
 
 ---
 
@@ -243,7 +227,7 @@ Substrates 13 (Anthropic Fable 5 + Mythos 5) / 14 (agentrust-io, pre-launch priv
 
 ---
 
-**Status:** Preparation notes for CoSAI WS4 PR #117 follow-on + Risk Map Issue #369 + WS4 #99 integration discussion. Not a standalone artifact. Open to integrating into existing CoSAI substrates wherever makes sense.
+**Status:** Research lens cross-walking the agentic standards landscape. Not a standalone framework.
 
-**Contact for CoSAI integration coordination:** Mayur021 on GitHub; @Mayur Agnihotri on CoSAI Slack.
-**Joint coordination for CSA NHI 6-property:** Mallikarjunarao Sunke (CSA IAM WG).
+**Contact:** Mayur021 on GitHub.
+**Joint credit anchor:** Mallikarjunarao Sunke (CSA NHI 6-property chain audit schema; internal CSA IAM WG joint work).
