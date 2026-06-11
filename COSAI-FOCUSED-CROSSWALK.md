@@ -79,7 +79,6 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 | **WIMSE workload-identity-practices-04** | SPIFFE JWT-SVID/X.509-SVID Workload API + delegation patterns | WG Consensus / Waiting for Write-Up |
 | **W3C VC Data Model 2.0** | `proof` mechanism preserving issuer chain + `validFrom` / `validUntil` | W3C Recommendation 15 May 2025 |
 | **Atlas Framework arXiv 2502.19567** | ML Lifecycle Provenance | Published Feb 2025 |
-| **agentrust-io** (public ref) | VADP scope-narrowing in artifact #8 — referenced in WS4 #99 | Pre-launch private until 2026-06-23; cite only public WS4 #99 reference |
 
 ---
 
@@ -99,8 +98,6 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 | **C2PA** | Cryptographic provenance for AI-generated content | Coalition spec |
 | **SPDX 3.0.1 AIPackage** | `modelExplainability` + `informationAboutApplication` + `informationAboutTraining` | Stable |
 | **OpenTelemetry trace context** | Trace context propagation | OpenTelemetry standard |
-| **EQTY Lab Lineage Explorer** (public demo) | vLLM provenance visualization | Public demo at CoSAI WS1 |
-| **agentrust-io TRACE** (public ref) | GatewayClaim append-only Merkle registry | Public reference via WS4 #99 |
 
 ---
 
@@ -113,14 +110,14 @@ Where this cross-walk maps into ongoing CoSAI work:
 - **Phase 4 Runtime control rows** — ADLC-RT-I01 (Manifest-declared action class evaluation) + ADLC-RT-I02 (Worst-case chain rule per AISVS C9.2.7 Proposed for v1.01) + ADLC-RT-I04 (AARM-conformant runtime evidence stream per Errico arXiv 2602.09433)
 - **Phase 5 Reflection / Phase 6 Maintenance** — composition with CSA NHI 6-property chain audit schema (internal IAM WG joint Mayur + Mallikarjunarao)
 
-### CoSAI Risk Map (Issue #369 — Bill Stout)
+### CoSAI Risk Map (Issue #369)
 - **Controls → frameworks inversion** — when re-organized, the schema property-level cross-walks above become the operational lookup. AISVS C9.2.6/7, CSA NHI 6-property, AARM, IMDA Tools/Instructions all map to existing Risk Map controls (controlAgentExecutionBounds + controlAgentIntegrityManagement + controlAgentCredentialIsolation + controlOrchestratorAndRouteIntegrity).
 
 ### CoSAI WS4 #99 (Agent Credentials RFC)
-- **8-co-author RFC schema integration** — Mayur cross-walk adds AISVS C9.2.6/7 (Proposed for v1.01) + CSA NHI 6-property (internal IAM WG) + AARM (CSAI flagship) + agentrust-io VADP scope-narrowing (public reference via WS4 #99). All extend the existing 8-co-author RFC, no new RFC needed.
+- **Schema composition** — the cross-walk composes AISVS C9.2.6/7 (Proposed for v1.01) + CSA NHI 6-property (internal IAM WG) + CSAI Foundation AARM (Errico arXiv 2602.09433) + delegation scope-narrowing patterns with the existing 8-co-author RFC scope.
 
 ### CoSAI WS4 PR #116 (Identity Architecture Patterns)
-- **6-layer architecture composition** — action-class authority axis is orthogonal: flows into Layer 2 as declared class (AgentCard), through Layer 3 as OAuth scope claim, preserved in Layer 5 as actor claim (chain), audited in Layer 6 as verdict. Composes with Justin Albrethsen's ZeroID reference (Layers 1, 2, 3, 5).
+- **6-layer architecture composition** — action-class authority axis is orthogonal: flows into Layer 2 as declared class (AgentCard), through Layer 3 as OAuth scope claim, preserved in Layer 5 as actor claim (chain), audited in Layer 6 as verdict.
 
 ### CoSAI WS4 #113 (Multimodal Agentic Security)
 - **Tool design composition** — multimodal attack vectors (typographic/steganographic/adversarial perturbation/preprocessing exploit) cross-walk to AISVS C9.2.6 manifest-declared action class + Tool Design Principles 4 (Two-Stage Commit) + 5 (per-tool immutable audit).
@@ -129,7 +126,7 @@ Where this cross-walk maps into ongoing CoSAI work:
 - **SBOM + AIBOM convergence** — SPDX 3.0.1 AIPackage + SPDX 3.1-RC1 PRs (#1259 dataset size for EU AI Act + #1267 additionalInformation extensibility) + G7 BSI SBOM for AI 7-cluster + OWASP AOS AgBOM (extends CycloneDX/SWID/SPDX). Direct cross-walk to ws1-supply-chain risks-and-controls v1 + signing-ml-artifacts.
 
 ### CoSAI WS2 (Defenders)
-- **Telemetry + Shared Responsibility** — CoSAI WS2 Telemetry framework (OCSF-aligned) composes with OWASP AOS AgBOM + AARM tamper-evident receipts + EQTY Lab Lineage Explorer (public demo). Shared Responsibility Framework anchors persona × responsibility mapping for action-class authority enforcement.
+- **Telemetry + Shared Responsibility** — CoSAI WS2 Telemetry framework (OCSF-aligned) composes with OWASP AOS AgBOM + AARM tamper-evident receipts. Shared Responsibility Framework anchors persona × responsibility mapping for action-class authority enforcement.
 
 ---
 
@@ -171,8 +168,8 @@ This section maps how the cross-walk composes with the full CoSAI ecosystem. The
 | MCP Security paper v1 (Jan 2026) + V2 in flight (PR #108) | Cross-walk catalogs MCP 2025-11-25 spec (OAuth 2.1 + RFC 9728 + RFC 8707), explicitly distinguishing from community "MCP-I" label. |
 | Agentic Identity & Access Control paper (Apr 2026) | 6-layer pattern resolves to A1 Identity through A7 Observability. |
 | `mcp-secure-tool-design.md` (read-only / reversible / commit tool classes + Two-Stage Commit + L1/L2/L3 Autonomy Matrix) | Tool design classes compose with action-class authority A2 axis (read-only / reversible / external-reversible / irreversible per OWASP AISVS C9.2.6 Proposed for v1.01). |
-| PR #117 ADLC Controls Checklist (open) | Each control row resolves to a cross-walk substrate. Sample mappings: manifest-declared action class (AISVS C9.2.6), worst-case chain rule (AISVS C9.2.7), AARM evidence stream (Errico arXiv 2602.09433), signature verification (W3C VC 2.0 + DID Core), data-quality gate (Microsoft AGT PR #2224 two-layer pattern). |
-| PR #116 Identity Architecture Playbook (WIP) | 6-layer pattern composes with action-class A2 axis cross-cuts (declared at Layer 2, gated at Layer 4, preserved at Layer 5, audited at Layer 6). Cross-references ZeroID reference implementation. |
+| PR #117 ADLC Controls Checklist (open) | Each control row resolves to a cross-walk substrate. Sample mappings: manifest-declared action class (AISVS C9.2.6), worst-case chain rule (AISVS C9.2.7), AARM evidence stream (Errico arXiv 2602.09433), signature verification (W3C VC 2.0 + DID Core), data-quality gate (policy-evaluation + external data-quality signal two-layer pattern). |
+| PR #116 Identity Architecture Playbook (WIP) | 6-layer pattern composes with action-class A2 axis cross-cuts (declared at Layer 2, gated at Layer 4, preserved at Layer 5, audited at Layer 6). |
 | #99 Agent Credentials RFC (accepted, 8 co-authors) | Cross-walk catalogs A2A v1.0.1 AgentCard (JWS+JCS+mTLS), W3C VC 2.0 + DID Core, MCP OAuth model, WIMSE WG drafts, CSA NHI 6-property chain audit schema (internal IAM WG joint with Mallikarjunarao Sunke). |
 | #113 Multimodal Agentic Security RFC (accepted) | 4-technique taxonomy maps to A4 Blast-radius + A7 Observability axes. |
 | ADLC SIG (PR #101 merged 2026-06-01; 7-phase ownership locked 2026-06-03) | Cross-walk supports each of 7 phases via A1-A8 axis × H1-H12 risk mapping. Proposed 8th phase System Governance (Doyin Awofodu) extends A8. |
@@ -223,7 +220,7 @@ Every reference in this document carries its version-stamp qualifier:
 - **"Individual I-D (NOT WG-adopted)"** for AI-agent WIMSE individual drafts
 - **"3.1-RC1 / 3.0.1 stable"** for SPDX
 
-Substrates 13 (Anthropic Fable 5 + Mythos 5) / 14 (agentrust-io, pre-launch private until 2026-06-23) / 16 (EQTY Lab) are cited from public references only.
+Vendor-specific substrates are not cited in this artifact; the cross-walk is vendor-neutral across standards bodies, RFCs, and academic substrate only.
 
 ---
 
