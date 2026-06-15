@@ -7,7 +7,7 @@
 > **What this is FOR:** Supporting standards-track contributions to existing bodies (CSA, NIST, CoSAI, OWASP, SPDX, IETF, W3C) by making convergence visible across the landscape.
 
 **Maintainer:** Mayur Agnihotri ([@Mayur021](https://github.com/Mayur021))
-**Joint credit anchor:** Mallikarjunarao Sunke (CSA NHI 6-property chain audit schema — internal CSA IAM WG joint work, under review for v1.0)
+**Joint credit anchor:** Mallikarjunarao Sunke. CSA NHI v1.0 anchor reflects the four-element attribution language (delegator / agent / intent / actions) at paragraph 222 of the Working Draft (joint peer-review contribution; verified 2026-06-15). Full six-property chain audit schema (chain-id binding, originating-principal immutability, audit telemetry surface) is targeted for v2.0 inclusion (joint contribution with Mallikarjunarao Sunke).
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 **Status:** v1.1 research artifact — feedback welcome via Issues and PRs
 
@@ -45,7 +45,7 @@ Cite this cross-walk as:
 
 > Mayur Agnihotri. "Agentic Standards Cross-Walk: An Action-Class Authority Lens." v1.1, 2026-06-11. https://github.com/Mayur021/agentic-standards-cross-walk
 
-When citing the CSA NHI 6-property chain audit schema specifically, also credit Mallikarjunarao Sunke (joint authorship, internal CSA IAM WG work; under review for v1.0).
+When citing the CSA NHI four-element attribution language (delegator / agent / intent / actions) anchored at paragraph 222 of the v1.0 Working Draft, or the full six-property chain audit schema (chain-id binding, originating-principal immutability, audit telemetry surface) targeted for v2.0 inclusion, also credit Mallikarjunarao Sunke (joint authorship).
 
 ## Quick start — for contributors
 
@@ -57,7 +57,7 @@ When citing the CSA NHI 6-property chain audit schema specifically, also credit 
 
 Substrate scope across these families:
 
-- **CSA**: NHI v1 / NHI 6-property internal WG / Agentic Trust Framework v0.9.1 / AARM / AAGATE / NIST AI RMF Agentic Profile / OpenClaw / AICM v1.0 / MAESTRO / AI Safety Initiative / IAM WG
+- **CSA**: NHI v1 (registry whitepaper) / *Defining NHI v1.0* Working Draft (four-element attribution at para 222; joint Mayur + Mallikarjunarao Sunke) / *Defining NHI v2.0* (forthcoming; full six-property chain audit schema; joint) / Agentic Trust Framework v0.9.1 / AARM / AAGATE / NIST AI RMF Agentic Profile / OpenClaw / AICM v1.0 / MAESTRO / AI Safety Initiative / IAM WG
 - **NIST**: AI RMF (AI 100-1) / AI 600-1 GenAI Profile / IR 8596 Cyber AI Profile / SP 800-53 COSAiS / AI 100-2e2025 / CSF 2.0 / CAISI AI Agent Standards Initiative / GitHub repos
 - **CoSAI**: Risk Map v1 / WS4 ADLC 7-phase / WS4 Identity Architecture / WS4 #99 Agent Credentials / WS4 #113 Multimodal / WS1 / WS2 / WS3 / TSC / CodeGuard / Resources
 - **OWASP**: AISVS v1.0 / AISVS C9.2.6+9.2.7 / LLM Top 10 v2 / ASI Agentic Top 10 / NHI Top 10 / SPVS 1.0+1.5-AI / AOS / AST10 / AIVSS / secure-agent-playbook / Agent-Security-Regression-Harness / AI Testing Guide / AI Security & Privacy Guide / AIMM
@@ -72,7 +72,7 @@ Substrate scope across these families:
 This artifact applies strict citation discipline:
 
 - Every draft standard carries its version-stamp qualifier ("Proposed for v1.01", "Public Review Draft v0.9.1", "Preliminary Draft", "I-D Exists", "research/ directory", "3.1-RC1")
-- CSA NHI 6-property chain audit schema is jointly credited to Mallikarjunarao Sunke on every reference
+- CSA NHI references distinguish the v1.0 four-element attribution language anchored at para 222 (joint Mayur + Mallikarjunarao Sunke) from the full six-property chain audit schema targeted for v2.0 (also joint); Mallikarjunarao Sunke is jointly credited on every reference to either
 - Vendor-specific substrates are not cited; the cross-walk is vendor-neutral across standards bodies, RFCs, and academic substrate only
 - No proprietary or pre-launch private content from any working group
 
@@ -88,7 +88,7 @@ If you spot a missing qualifier or attribution, open an Issue tagged `citation-q
 ## Contact
 
 - GitHub: [@Mayur021](https://github.com/Mayur021) — open Issues, PRs, or Discussions on this repo
-- For CSA NHI 6-property cross-walks, please also direct to **Mallikarjunarao Sunke** (joint authorship anchor)
+- For CSA NHI cross-walks (v1.0 four-element attribution AND v2.0-targeted six-property formalization), please also direct to **Mallikarjunarao Sunke** (joint authorship anchor)
 - For substrate-specific corrections, please direct to the project leads named in each substrate row of [SUBSTRATES.md](SUBSTRATES.md)
 
 ---
