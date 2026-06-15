@@ -13,7 +13,9 @@ The structural axis of multi-hop delegation preservation — preserving the orig
 
 | Substrate | Vocabulary used | Status qualifier |
 |---|---|---|
-| CSA NHI 6-property property 5 | "Parent-chain binding" (jointly Mallikarjunarao Sunke + Mayur chain-id binding R8) | Internal IAM WG joint work; under review for v1.0 |
+| CSA NHI v1.0 four-element attribution language (para 222) | "delegator / agent / intent / actions" — anchored verbatim in v1.0 Working Draft at paragraph 222 (joint Mallikarjunarao Sunke + Mayur) | Anchored in CSA NHI v1.0 Working Draft (joint peer-review contribution; in editorial closure) |
+| CSA NHI v2.0 (forthcoming) six-property schema property 5 | "Parent-chain binding" (jointly Mallikarjunarao Sunke + Mayur chain-id binding R8) | NOT in v1.0; targeted for v2.0 inclusion (joint Mayur + Mallikarjunarao Sunke) |
+| CSA NHI v2.0 (forthcoming) six-property schema property 6 | "Immutability of originating principal as schema property" (Mallikarjunarao Sunke) | NOT in v1.0; targeted for v2.0 inclusion (joint Mayur + Mallikarjunarao Sunke) |
 | IETF RFC 8693 | "Actor claims" in OAuth token exchange | Published RFC |
 | CoSAI WS4 PR #116 Layer 5 | "Delegation Chain Preservation (RFC 8693 token exchange + actor claims)" | WIP |
 | CoSAI WS4 #99 Agent Credentials RFC | "Delegation chain" sub-section in 8-co-author RFC | Accepted 2026-06-04; 4-week draft window |
@@ -28,16 +30,16 @@ The structural axis of multi-hop delegation preservation — preserving the orig
 
 ## What the cross-walk reveals
 
-1. **Twelve substrates** name the chain audit axis under different vocabularies. The CSA NHI property 5 (Mallikarjunarao + Mayur joint work) and RFC 8693 actor claims are the foundational primitives.
-2. **Composability gap** — RFC 8693 is published; CSA NHI 6-property is internal IAM WG (under review for v1.0); CoSAI WS4 #99 is accepted but in 4-week draft; agentrust-io VADP is pre-launch private. The full composition is not yet expressible from public references alone.
+1. **Multiple substrates** name the chain audit axis under different vocabularies. The CSA NHI v1.0 four-element attribution language at para 222 (Mallikarjunarao + Mayur joint peer-review contribution) is the anchored v1.0 primitive; the full six-property formalization including parent-chain binding (joint with chain-id binding R8 Mayur) is targeted for v2.0; RFC 8693 actor claims are the foundational protocol primitive.
+2. **Composability gap** — RFC 8693 is published; CSA NHI v1.0 anchors the four-element attribution subset at para 222 (in editorial closure); the full six-property chain audit schema is targeted for CSA NHI v2.0 inclusion; CoSAI WS4 #99 is accepted but in 4-week draft; agentrust-io VADP is pre-launch private. The full composition is not yet expressible from public references alone.
 3. **AISVS C9.2.7** (Proposed for v1.01) is the worst-case chain rule that operationalizes the audit primitive for runtime enforcement — without it, the schema exists but the runtime gate does not.
 4. **A2A v1.0.1** (May 2026) is the first agent-to-agent protocol with native delegation chain + signature verification; cross-walk to CoSAI WS4 #99 is the natural integration path.
 
 ## Open contribution slots
 
-- Promote CSA NHI 6-property chain audit schema (Mayur + Mallikarjunarao joint work) to external publication
+- Promote the full CSA NHI six-property chain audit schema (chain-id binding, originating-principal immutability, audit telemetry surface; Mayur + Mallikarjunarao Sunke joint work) to CSA NHI v2.0; v1.0 anchors the four-element attribution language at paragraph 222
 - Add a worst-case chain rule reference to A2A AgentCard delegation chain extension
-- File IETF Internet-Draft for chain audit schema (Q3-Q4 2026; WIMSE-adjacent)
+- File IETF Internet-Draft for full six-property chain audit schema (CSA NHI v2.0 hook; Q3-Q4 2026; WIMSE-adjacent)
 - Add chain audit cross-walk to CSA AICM v1.0 STA (Supply Chain Management & Transparency) domain
 - Extend SPDX 3.1+ AIAgent (PR #1257) with `delegationChainBinding` property
 
@@ -45,4 +47,4 @@ The structural axis of multi-hop delegation preservation — preserving the orig
 
 When citing this example:
 
-> Cross-Walking the Agentic Standards Landscape, Example 2 (Chain Audit Across Substrates). Mayur Agnihotri + Mallikarjunarao Sunke joint anchor on CSA NHI 6-property, 2026-06-11. https://github.com/Mayur021/agentic-standards-cross-walk/blob/main/EXAMPLES/02-chain-audit-cross-walk.md
+> Cross-Walking the Agentic Standards Landscape, Example 2 (Chain Audit Across Substrates). Mayur Agnihotri + Mallikarjunarao Sunke joint anchor on CSA NHI v1.0 four-element attribution at para 222 + v2.0-targeted six-property formalization, 2026-06-11 (re-baselined 2026-06-15). https://github.com/Mayur021/agentic-standards-cross-walk/blob/main/EXAMPLES/02-chain-audit-cross-walk.md
