@@ -20,7 +20,7 @@ This is the most important contribution rule. Every substrate citation in your c
 | "Singapore IMDA 6 components" | "Singapore IMDA MGF Agentic AI v1.5 (8 components — Model / Instructions / Memory / Planning_Reasoning / Tools / Protocols / Controls / Logging_Monitoring; 20 May 2026)" |
 | "MCP-I" | "MCP authorization model: OAuth 2.1 + RFC 9728 + RFC 8707 (no native VC/DID layer); 'MCP-I' is community label, not Anthropic spec" |
 | "SPDX 3.1" | "SPDX 3.1-RC1 (pre-release, 2026-01-24); 3.0.1 stable" |
-| "OWASP Multi-Agent Threat Modeling Guide" | "OWASP Multi-Agent threat content distributed across AISVS C9.8 + ASI Sprint 1 ASI13/14 + lets-threat-model tool — no standalone repo" |
+| "OWASP Multi-Agent Threat Modeling Guide" | "OWASP Multi-Agent threat content was previously distributed across former AISVS C9.8 (removed in 2026-06-15 PR #928 + #934 cleanup) + ASI Sprint 1 ASI13/14 + lets-threat-model tool — no standalone repo; multi-agent isolation has no current AISVS sub-ID anchor pending v1.01 contribution" |
 | "WIMSE IETF standard" | For WG drafts: "WIMSE WG I-D" (or specific draft name); for AI-agent drafts: "WIMSE individual I-D (NOT WG-adopted)" |
 
 If you're unsure of the correct qualifier, leave a `[QUALIFIER?]` placeholder in your PR; we'll resolve in review.
