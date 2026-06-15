@@ -11,7 +11,8 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 | ID | Name | URL | Status |
 |---|---|---|---|
 | S01 | CSA NHI v1 Whitepaper | labs.cloudsecurityalliance.org/research/csa-whitepaper-nonhuman-identity-agentic-ai-governance-v1-cs/ | Published May 2026 (recommends 6-FIELD registry, not normative schema) |
-| S01b | CSA NHI 6-property chain audit schema (internal IAM WG, joint Mayur + Mallikarjunarao Sunke) | private CSA channels | Internal WG; under review for v1.0 |
+| S01b | CSA *Defining NHI v1.0* Working Draft — four-element attribution language (delegator / agent / intent / actions) at paragraph 222 (joint Mayur + Mallikarjunarao Sunke) | CSA IAM WG Working Draft | Editorial close mid-June 2026; four-element attribution anchored verbatim at para 222 (verified 2026-06-15) |
+| S01c | CSA *Defining NHI v2.0* (forthcoming) — full six-property chain audit schema: chain-id binding, originating-principal immutability as schema property, audit telemetry surface (joint Mayur + Mallikarjunarao Sunke) | CSA IAM WG private channels; v2.0 hook | NOT verbatim in v1.0; targeted for v2.0 inclusion |
 | S02 | CSA Agentic Trust Framework | github.com/massivescale-ai/agentic-trust-framework | Public Review Draft v0.9.1 (April 2026); 5 Core Elements + 25 reqs |
 | S03 | CSAI Foundation AARM | arxiv.org/abs/2602.09433 | CSAI Foundation flagship adopted 2026-04-29 |
 | S03b | CSA AAGATE | arxiv.org/abs/2510.25863 + cloudsecurityalliance.org/blog/2025/12/22/aagate | Published Dec 22 2025 (CSA blog) |
