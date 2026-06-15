@@ -3,7 +3,7 @@
 **Prepared by:** Mayur Agnihotri (Mayur021)
 **Date:** 2026-06-11
 **Purpose:** Cross-walk preparation supporting CoSAI WS4 ADLC PR #117 follow-on + Risk Map Issue #369 + WS4 #99 Agent Credentials work. Not a standalone artifact — preparation lens for integration into existing CoSAI substrates.
-**Joint credit anchor:** Mallikarjunarao Sunke on CSA NHI 6-property chain audit schema (internal CSA IAM WG joint work, under review for v1.0).
+**Joint credit anchor:** Mallikarjunarao Sunke on the CSA NHI v1.0 four-element attribution language (delegator / agent / intent / actions) anchored at paragraph 222 of the Working Draft (joint peer-review contribution) AND the full six-property chain audit schema (chain-id binding, originating-principal immutability, audit telemetry surface) targeted for v2.0 inclusion. (Verified 2026-06-15 against `/root/Defining_Non-Human_Identity.docx`.)
 **Discipline:** Every draft standard carries its version qualifier. Substrates 13/14/16 cited from public references only.
 
 ---
@@ -43,7 +43,7 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 | **CoSAI WS4 ADLC (PR #117)** sample row | ADLC-AD-A03 "Reversibility taxonomy alignment per AISVS C9.2.6" (Mayur's PR #117 comment 2026-06-10) | Open PR comment |
 | **OWASP AISVS C9.2.6** | "manifest-declared reversibility classification" — actions carry a reversibility class (read-only / reversible / external-reversible / irreversible) declared in tool/action manifest | **Proposed for v1.01** (merged via PR #822 into AISVS research/ directory 2026-05-27) |
 | **OWASP AISVS C9.2.7** | "worst-case chain rule + blast-radius independent axis" — blast radius can only raise authority within a class | **Proposed for v1.01** (same PR) |
-| **OWASP AISVS C9.2.1-9.2.4** (v1.0 main chapter) | Execution gate + canonicalized parameters + cryptographic binding + rollback semantics | Published in AISVS v1.0 (release 2026-06-24) |
+| **OWASP AISVS C9.2.1-9.2.3** (v1.0 main chapter, post-2026-06-15 cleanup) | Execution gate + canonicalized parameters + cryptographic binding (former 9.2.4 compensating-actions requirement was removed in the PR #928 + #934 cleanup; Mohamad Khalil Yossif's 9.2.5 approval-evidence trust boundary proposed for v1.0 inclusion) | Published in AISVS v1.0 (release 2026-06-24) |
 | **CSA Agentic Trust Framework I-5** | "Capability Manifest" (one of 5 Core Elements + 25 reqs) | Public Review Draft v0.9.1 |
 | **CSA Agentic Trust Framework S-2** | "Action Boundaries" + S-5 "Blast Radius Containment" | Public Review Draft v0.9.1 |
 | **CSA NIST AI RMF Agentic Profile AG-MP.1** | "Tool Risk Classification" (consequence scope, reversibility, auth, compositional risk) | CSA Labs draft March 2026 |
@@ -66,13 +66,14 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 |---|---|---|
 | **CoSAI WS4 #99 Agent Credentials RFC** | "Delegation chain" sub-section in 8-co-author RFC | Accepted 2026-06-04; 4-week draft window |
 | **CoSAI WS4 PR #116 Layer 5** | "Delegation Chain Preservation (RFC 8693 token exchange + actor claims)" | WIP |
-| **CSA NHI 6-property property 5** (Mallikarjunarao + Mayur chain-id binding R8 joint) | "Parent-chain binding" | **Internal CSA IAM WG joint work; under review for v1.0** |
-| **CSA NHI 6-property property 6** (Mallikarjunarao) | "Immutability of originating principal" | Internal CSA IAM WG joint work; under review for v1.0 |
+| **CSA NHI v1.0 four-element attribution (joint Mallikarjunarao Sunke + Mayur)** | "delegator / agent / intent / actions" at paragraph 222 | **Anchored verbatim in v1.0 Working Draft (joint peer-review contribution; in editorial closure)** |
+| **CSA NHI six-property schema property 5 (chain-id binding; joint Mallikarjunarao + Mayur R8)** | "Parent-chain binding" | **NOT verbatim in v1.0; targeted for v2.0 inclusion (joint Mallikarjunarao Sunke)** |
+| **CSA NHI six-property schema property 6 (Mallikarjunarao)** | "Immutability of originating principal as schema property" | **NOT verbatim in v1.0; targeted for v2.0 inclusion (joint Mallikarjunarao Sunke)** |
 | **CSA Agentic Trust Framework I-3** | "Ownership Chain" (one of Identity Element 5 requirements) | Public Review Draft v0.9.1 |
 | **CSA NIST AI RMF Agentic Profile AG-MS.3** | "Delegation Chain Integrity" | CSA Labs draft March 2026 |
 | **OWASP AISVS C9.2.7** | "worst-case classification governing across a multi-step chain" | **Proposed for v1.01** (merged 2026-05-27 into research/ directory) |
-| **OWASP AISVS C9.4** | "Agent and Orchestrator Identity, Signing, Tamper-Evident Audit" (6 requirements) | Published in AISVS v1.0 |
-| **OWASP AISVS C9.6** | "Authorization, Delegation, Continuous Enforcement" (7 requirements) | Published in AISVS v1.0 |
+| **OWASP AISVS C9.4** | "Agent and Orchestrator Identity, Signing, Tamper-Evident Audit" (5 requirements, 9.4.1-9.4.5 — count revised in 2026-06-15 PR #928 + #934 cleanup) | Published in AISVS v1.0 |
+| **OWASP AISVS C9.5** | "Agent Authorization, Delegation, and Continuous Enforcement" (6 requirements, 9.5.1-9.5.6 — renumbered from former C9.6 in the 2026-06-15 PR #928 + #934 cleanup) | Published in AISVS v1.0 |
 | **A2A Protocol v1.0.1** | "Delegation chain" + AgentCard JWS + JCS signature verification + mTLS | Published 28 May 2026 |
 | **IETF RFC 8693** | "Actor claims" in OAuth token exchange | Published RFC |
 | **WIMSE arch-07** | Section 3.3.9 — AI agents as delegated workloads inheriting upstream security context | WG I-D, March 2026 |
@@ -108,7 +109,7 @@ Where this cross-walk maps into ongoing CoSAI work:
 ### CoSAI WS4 PR #117 (ADLC Controls Checklist)
 - **Phase 3 Admission control rows** — ADLC-AD-A01 (Manifest signature verification) + ADLC-AD-A03 (Reversibility taxonomy alignment per AISVS C9.2.6 Proposed for v1.01)
 - **Phase 4 Runtime control rows** — ADLC-RT-I01 (Manifest-declared action class evaluation) + ADLC-RT-I02 (Worst-case chain rule per AISVS C9.2.7 Proposed for v1.01) + ADLC-RT-I04 (AARM-conformant runtime evidence stream per Errico arXiv 2602.09433)
-- **Phase 5 Reflection / Phase 6 Maintenance** — composition with CSA NHI 6-property chain audit schema (internal IAM WG joint Mayur + Mallikarjunarao)
+- **Phase 5 Reflection / Phase 6 Maintenance** — composition with CSA NHI v1.0 four-element attribution language (para 222; joint Mayur + Mallikarjunarao Sunke) and the full six-property chain audit schema targeted for v2.0 inclusion
 
 ### CoSAI Risk Map (Issue #369)
 - **Controls → frameworks inversion** — when re-organized, the schema property-level cross-walks above become the operational lookup. AISVS C9.2.6/7, CSA NHI 6-property, AARM, IMDA Tools/Instructions all map to existing Risk Map controls (controlAgentExecutionBounds + controlAgentIntegrityManagement + controlAgentCredentialIsolation + controlOrchestratorAndRouteIntegrity).
@@ -228,3 +229,8 @@ Vendor-specific substrates are not cited in this artifact; the cross-walk is ven
 
 **Contact:** Mayur021 on GitHub.
 **Joint credit anchor:** Mallikarjunarao Sunke (CSA NHI 6-property chain audit schema; internal CSA IAM WG joint work).
+
+---
+
+<!-- Control-ID currency note -->
+> **Control-ID currency note:** AISVS C9 references in this document use the post-2026-06-15 v1.0 main chapter inventory (PR #928 + #934 cleanup). Earlier drafts referenced C9.7.x and C9.9.x sub-controls which were removed in the cleanup. Verify current main chapter before quoting any specific sub-ID.
