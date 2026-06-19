@@ -25,7 +25,7 @@ A research artifact that:
 
 ## Why
 
-The agentic-AI standards landscape has converged on a shared structural primitive under multiple vocabularies — manifest-declared action class (OWASP AISVS C9.2.6, Proposed for v1.01), capability declaration (CSA Agentic Trust Framework I-5), tool risk classification (CSA NIST AI RMF Agentic Profile AG-MP.1), action boundaries (CSA Agentic Trust Framework S-2), permission scope (CSA NHI registry field 5), agentTrustLevel + agentPermissionScope (SPDX 3.1-RC1 PR #1257), Tools + Instructions components (Singapore IMDA MGF v1.5), Excessive Agency (OWASP LLM Top 10 LLM06). These are the same axis under different names.
+The agentic-AI standards landscape has converged on a shared structural primitive under multiple vocabularies — manifest-declared action class (OWASP AISVS C9.2.3, shipped v1.0), capability declaration (CSA Agentic Trust Framework I-5), tool risk classification (CSA NIST AI RMF Agentic Profile AG-MP.1), action boundaries (CSA Agentic Trust Framework S-2), permission scope (CSA NHI registry field 5), agentTrustLevel + agentPermissionScope (SPDX 3.1-RC1 PR #1257), Tools + Instructions components (Singapore IMDA MGF v1.5), Excessive Agency (OWASP LLM Top 10 LLM06). These are the same axis under different names.
 
 This artifact names it explicitly and cross-walks it so contributors across standards bodies can see the convergence and fill the gaps.
 
@@ -60,7 +60,7 @@ Substrate scope across these families:
 - **CSA**: NHI v1 (registry whitepaper) / *Defining NHI v1.0* Working Draft (four-element attribution at para 222; joint Mayur + Mallikarjunarao Sunke) / *Defining NHI v2.0* (forthcoming; full six-property chain audit schema; joint) / Agentic Trust Framework v0.9.1 / AARM / AAGATE / NIST AI RMF Agentic Profile / OpenClaw / AICM v1.0 / MAESTRO / AI Safety Initiative / IAM WG
 - **NIST**: AI RMF (AI 100-1) / AI 600-1 GenAI Profile / IR 8596 Cyber AI Profile / SP 800-53 COSAiS / AI 100-2e2025 / CSF 2.0 / CAISI AI Agent Standards Initiative / GitHub repos
 - **CoSAI**: Risk Map v1 / WS4 ADLC 7-phase / WS4 Identity Architecture / WS4 #99 Agent Credentials / WS4 #113 Multimodal / WS1 / WS2 / WS3 / TSC / CodeGuard / Resources
-- **OWASP**: AISVS v1.0 / AISVS C9.2.6+9.2.7 / LLM Top 10 v2 / ASI Agentic Top 10 / NHI Top 10 / SPVS 1.0+1.5-AI / AOS / AST10 / AIVSS / secure-agent-playbook / Agent-Security-Regression-Harness / AI Testing Guide / AI Security & Privacy Guide / AIMM
+- **OWASP**: AISVS v1.0 / AISVS C9.2.3+9.2.4+9.2.7 / LLM Top 10 v2 / ASI Agentic Top 10 / NHI Top 10 / SPVS 1.0+1.5-AI / AOS / AST10 / AIVSS / secure-agent-playbook / Agent-Security-Regression-Harness / AI Testing Guide / AI Security & Privacy Guide / AIMM
 - **SPDX**: 3.0.1 AI Profile / 3.0.1 Dataset Profile / 3.1-RC1 PRs #1259 / #1267 / #1257 / #1249 / #1280 / active issues
 - **Government / regulatory**: Singapore IMDA MGF v1.5 / WhiteHouse M-24-10 / EU AI Act Article 53(1)(d) / G7 BSI SBOM for AI / EU AI Act (full)
 - **Identity protocols**: MCP 2025-11-25 / A2A v1.0.1 / WIMSE WG / WIMSE individual I-Ds / W3C VC 2.0 / W3C DID Core / AGENTS.md / OASF / Agent Trust Bench / SPIFFE-SPIRE / RFC 8693 + 9728 + 8707
