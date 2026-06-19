@@ -71,7 +71,7 @@ Substrate scope across these families:
 
 This artifact applies strict citation discipline:
 
-- Every draft standard carries its version-stamp qualifier ("Proposed for v1.01", "Public Review Draft v0.9.1", "Preliminary Draft", "I-D Exists", "research/ directory", "3.1-RC1")
+- Every draft standard carries its version-stamp qualifier ("Working Draft", "Public Review Draft v0.9.1", "Preliminary Draft", "I-D Exists", "research/ directory", "3.1-RC1")
 - CSA NHI references distinguish the v1.0 four-element attribution language anchored at para 222 (joint Mayur + Mallikarjunarao Sunke) from the full six-property chain audit schema targeted for v2.0 (also joint); Mallikarjunarao Sunke is jointly credited on every reference to either
 - Vendor-specific substrates are not cited; the cross-walk is vendor-neutral across standards bodies, RFCs, and academic substrate only
 - No proprietary or pre-launch private content from any working group
