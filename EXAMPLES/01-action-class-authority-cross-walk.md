@@ -1,5 +1,7 @@
 # Example 1 — Action-Class Authority Across Substrates
 
+> **AISVS citation note (updated 2026-06-24)**: The AISVS controls in the rows below shipped in OWASP AISVS v1.0 (released June 2026), in the Orchestration and Agentic Security chapter. C9.2.3 is the reversibility classification (Level 2), C9.2.4 is runtime enforcement by class (Level 2), and C9.2.10 is the worst-case-across-chain rule (Level 3). Verified against the released v1.0.
+
 The structural axis of action-class authority recurs across the standards landscape under multiple vocabularies. This worked example shows the same axis expressed in 12 different substrates.
 
 ## The axis
@@ -13,8 +15,8 @@ The structural axis of action-class authority recurs across the standards landsc
 
 | Substrate | Vocabulary used | Status qualifier |
 |---|---|---|
-| OWASP AISVS C9.2.6 | "manifest-declared reversibility classification" | Proposed for v1.01 (merged PR #822 into research/ directory 2026-05-27) |
-| OWASP AISVS C9.2.7 | "worst-case chain rule + blast-radius independent axis" | Proposed for v1.01 (same PR) |
+| OWASP AISVS C9.2.3 | "trusted reversibility classification" | Shipped in v1.0 |
+| OWASP AISVS C9.2.10 | "worst-case chain rule + blast-radius independent axis" | Shipped in v1.0 |
 | CSA Agentic Trust Framework I-5 | "Capability Manifest" | Public Review Draft v0.9.1 |
 | CSA Agentic Trust Framework S-2 | "Action Boundaries" | Public Review Draft v0.9.1 |
 | CSA NIST AI RMF Agentic Profile AG-MP.1 | "Tool Risk Classification (consequence scope, reversibility, auth, compositional risk)" | CSA Labs draft March 2026 |
@@ -23,15 +25,15 @@ The structural axis of action-class authority recurs across the standards landsc
 | OWASP ASI Sprint 1 ASI03 | "Identity & Privilege Abuse" | Sprint 1 draft |
 | OWASP AST10 AST03 | "Over-Privileged Skills" | Incubator, v1.0-2026 |
 | SPDX 3.1-RC1 PR #1257 | "agentTrustLevel + agentPermissionScope" | Open PR |
-| CoSAI WS4 PR #117 ADLC-AD-A03 | "Reversibility taxonomy alignment per AISVS C9.2.6" | PR comment 2026-06-10 |
+| CoSAI WS4 PR #117 ADLC-AD-A03 | "Reversibility taxonomy alignment per AISVS C9.2.3" | PR comment 2026-06-10 |
 | CSAI Foundation AARM (Errico) | "actions classify as forbidden / context-dependent deny / context-dependent allow" | arXiv 2602.09433; CSAI Foundation flagship 2026-04-29 |
 | Orchestration Layer Regulation | "regulation should shift to orchestration layer" | arXiv 2604.22819 (April 2026) |
 
 ## What the cross-walk reveals
 
 1. **Twelve substrates** name the same axis under twelve different vocabularies.
-2. **No single substrate** captures the full axis — the manifest declaration (AISVS C9.2.6) and the worst-case chain rule (AISVS C9.2.7) compose; CSA ATF I-5 + S-2 also compose; IMDA Instructions + Tools compose. The axis is structurally composite.
-3. **Status differential** — some are Published (LLM Top 10 v2, IMDA v1.5); some are Proposed (AISVS C9.2.6/7); some are Public Review Draft (CSA ATF); some are Open PR (SPDX 3.1-RC1 #1257); some are arXiv preprint (AARM, Orchestration Regulation). Citation discipline applies in every direction.
+2. **No single substrate** captures the full axis — the reversibility classification (AISVS C9.2.3) and the worst-case chain rule (AISVS C9.2.10) compose; CSA ATF I-5 + S-2 also compose; IMDA Instructions + Tools compose. The axis is structurally composite.
+3. **Status differential** — some are Published (LLM Top 10 v2, IMDA v1.5); some are Shipped (AISVS C9.2.3/9.2.10); some are Public Review Draft (CSA ATF); some are Open PR (SPDX 3.1-RC1 #1257); some are arXiv preprint (AARM, Orchestration Regulation). Citation discipline applies in every direction.
 4. **Convergence opportunity** — the unified vocabulary "action-class authority" is the integrating term. Adoption of this term in any single substrate's next revision creates cross-walk gravity for the others.
 
 ## Open contribution slots

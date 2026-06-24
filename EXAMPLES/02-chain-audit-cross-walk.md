@@ -1,5 +1,7 @@
 # Example 2 — Chain Audit / Delegation Preservation Across Substrates
 
+> **AISVS C9.2.10 citation note (updated 2026-06-24)**: The OWASP AISVS C9.2.10 control (worst-case reversibility classification governing across a multi-step chain, Level 3) shipped in AISVS v1.0 (released June 2026), in the Orchestration and Agentic Security chapter. Verified against the released v1.0.
+
 The structural axis of multi-hop delegation preservation — preserving the originating principal + all intermediate authorizations + all scope narrowings as an immutable record — recurs across the standards landscape.
 
 ## The axis
@@ -24,7 +26,7 @@ The structural axis of multi-hop delegation preservation — preserving the orig
 | agentrust-io (public reference) | "VADP scope-narrowing in artifact #8" | Public WS4 #99 reference (pre-launch private until 2026-06-23) |
 | CSA Agentic Trust Framework I-3 | "Ownership Chain" | Public Review Draft v0.9.1 |
 | CSA NIST AI RMF Agentic Profile AG-MS.3 | "Delegation Chain Integrity" | CSA Labs draft March 2026 |
-| OWASP AISVS C9.2.7 | "worst-case classification governing across a multi-step chain" | Proposed for v1.01 (merged 2026-05-27 into research/ directory) |
+| OWASP AISVS C9.2.10 | "worst-case classification governing across a multi-step chain" | Shipped in v1.0 |
 | CSAI Foundation AARM (Errico) | "tamper-evident receipts" recording the action chain | arXiv 2602.09433 |
 | W3C VC Data Model 2.0 | `validFrom` / `validUntil` + `proof` mechanism preserving issuer chain | W3C Recommendation 15 May 2025 |
 
@@ -32,7 +34,7 @@ The structural axis of multi-hop delegation preservation — preserving the orig
 
 1. **Multiple substrates** name the chain audit axis under different vocabularies. The CSA NHI v1.0 four-element attribution language at para 222 (Mallikarjunarao + Mayur joint peer-review contribution) is the anchored v1.0 primitive; the full six-property formalization including parent-chain binding (joint with chain-id binding R8 Mayur) is targeted for v2.0; RFC 8693 actor claims are the foundational protocol primitive.
 2. **Composability gap** — RFC 8693 is published; CSA NHI v1.0 anchors the four-element attribution subset at para 222 (in editorial closure); the full six-property chain audit schema is targeted for CSA NHI v2.0 inclusion; CoSAI WS4 #99 is accepted but in 4-week draft; agentrust-io VADP is pre-launch private. The full composition is not yet expressible from public references alone.
-3. **AISVS C9.2.7** (Proposed for v1.01) is the worst-case chain rule that operationalizes the audit primitive for runtime enforcement — without it, the schema exists but the runtime gate does not.
+3. **AISVS C9.2.10** (Shipped in v1.0) is the worst-case chain rule that operationalizes the audit primitive for runtime enforcement — without it, the schema exists but the runtime gate does not.
 4. **A2A v1.0.1** (May 2026) is the first agent-to-agent protocol with native delegation chain + signature verification; cross-walk to CoSAI WS4 #99 is the natural integration path.
 
 ## Open contribution slots
