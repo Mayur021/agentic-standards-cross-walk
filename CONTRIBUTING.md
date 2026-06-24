@@ -14,9 +14,9 @@ This is the most important contribution rule. Every substrate citation in your c
 
 | Incorrect (no qualifier) | Correct (with qualifier) |
 |---|---|
-| "AISVS C9.2.6" | "AISVS C9.2.6 (Proposed for v1.01; merged via PR #822 into research/ directory 2026-05-27)" |
+| "AISVS C9.2.3" (no status) | "AISVS C9.2.3 (reversibility classification, Level 2, shipped in OWASP AISVS v1.0, Orchestration and Agentic Security chapter)" |
 | "CSA ATF 7 properties" | "CSA Agentic Trust Framework v0.9.1 Public Review Draft (5 Core Elements + 25 requirements + 4-tier maturity)" |
-| "CSA NHI 6-property schema" | "CSA NHI 6-property chain audit schema (internal IAM WG joint Mayur Agnihotri + Mallikarjunarao Sunke; under review for v1.0)" |
+| "CSA NHI 6-property schema in v1.0" (overclaim) | v1.0 anchor: "CSA NHI v1.0 four-element attribution language (delegator / agent / intent / actions) anchored at paragraph 222 of the Working Draft (joint Mayur Agnihotri + Mallikarjunarao Sunke)". v2.0 target: "full six-property chain audit schema (chain-id binding, originating-principal immutability, audit telemetry surface) targeted for CSA NHI v2.0 inclusion (joint Mayur Agnihotri + Mallikarjunarao Sunke)" |
 | "Singapore IMDA 6 components" | "Singapore IMDA MGF Agentic AI v1.5 (8 components — Model / Instructions / Memory / Planning_Reasoning / Tools / Protocols / Controls / Logging_Monitoring; 20 May 2026)" |
 | "MCP-I" | "MCP authorization model: OAuth 2.1 + RFC 9728 + RFC 8707 (no native VC/DID layer); 'MCP-I' is community label, not Anthropic spec" |
 | "SPDX 3.1" | "SPDX 3.1-RC1 (pre-release, 2026-01-24); 3.0.1 stable" |
@@ -27,7 +27,12 @@ If you're unsure of the correct qualifier, leave a `[QUALIFIER?]` placeholder in
 
 ## Joint credit anchors
 
-**CSA NHI 6-property chain audit schema** is jointly authored by Mayur Agnihotri (fields 1-4 + chain-id binding R8) and Mallikarjunarao Sunke (field 5 parent-chain binding + property 6 immutability of originating principal). On every reference in the cross-walk artifact, both names must be cited together.
+**CSA NHI joint contribution** — verified 2026-06-15 against `/root/Defining_Non-Human_Identity.docx`:
+
+- **v1.0 anchor (verbatim in Working Draft at paragraph 222):** a four-element attribution language — *delegator, agent, intent, actions* — jointly contributed by Mayur Agnihotri and Mallikarjunarao Sunke.
+- **v2.0-targeted formalization (NOT yet in v1.0):** the full six-property chain audit schema — fields 1-4 by Mayur Agnihotri, plus property 5 parent-chain binding (Mallikarjunarao + chain-id binding R8 Mayur) and property 6 immutability of originating principal as schema property (Mallikarjunarao Sunke).
+
+On every reference to either the v1.0 anchor or the v2.0-targeted formalization, both names must be cited together.
 
 If you contribute a substrate where joint authorship applies, please name all authors of the substrate in the citation, not just the lead.
 

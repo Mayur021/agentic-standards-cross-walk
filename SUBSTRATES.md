@@ -4,6 +4,8 @@ Quick-reference index of every substrate in the cross-walk with canonical URL + 
 
 For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-CROSSWALK.md). For worked examples see [EXAMPLES/](EXAMPLES/).
 
+> **Status note on substrate S19a (updated 2026-06-24)**: The AISVS C9.2.3 + C9.2.10 controls shipped in OWASP AISVS v1.0 (released June 2026), in the Orchestration and Agentic Security chapter, renumbered from the earlier proposal. The reversibility classification is C9.2.3, runtime enforcement by class is C9.2.4, and worst-case-across-chain is C9.2.10. Verified against the released v1.0.
+
 ---
 
 ## CSA family
@@ -56,9 +58,9 @@ For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-
 
 | ID | Name | URL | Status |
 |---|---|---|---|
-| S19 | OWASP AISVS | github.com/OWASP/AISVS | v1.0 release 2026-06-24; 14 chapters; freeze 2026-04-30 |
-| S19a | AISVS C9.2.6 + C9.2.7 (Mayur authored) | github.com/OWASP/AISVS/pull/822 | Merged 2026-05-27 into research/ directory; Proposed for v1.01 |
-| S19b | AISVS Issue #828 (Mayur — bridge C14.2 to C9.2.6) | github.com/OWASP/AISVS/issues/828 | Closed with `after 1.0` label |
+| S19 | OWASP AISVS | github.com/OWASP/AISVS | v1.0 released June 2026; 12 requirement chapters (C1-C12); freeze 2026-04-30 |
+| S19a | AISVS C9.2.3 + C9.2.10 (Mayur contributed) | github.com/OWASP/AISVS/pull/822 | Shipped in v1.0 |
+| S19b | AISVS Issue #828 (Mayur — bridge C14.2 to C9.2.3) | github.com/OWASP/AISVS/issues/828 | Closed with `after 1.0` label |
 | S20 | OWASP LLM Top 10 v2 (2025) | github.com/OWASP/www-project-top-10-for-large-language-model-applications | Published v2 (2025) |
 | S20a | OWASP Agentic Security Initiative (ASI) | github.com/OWASP/www-project-top-10-for-large-language-model-applications/initiatives/agent_security_initiative/agentic-top-10/ | Sprint 1 draft (ASI01-ASI10) |
 | S20b | OWASP Top 10 for Agentic Applications 2026 | genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | Published 2026 |

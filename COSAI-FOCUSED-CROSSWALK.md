@@ -6,6 +6,8 @@
 **Joint credit anchor:** Mallikarjunarao Sunke on the CSA NHI v1.0 four-element attribution language (delegator / agent / intent / actions) anchored at paragraph 222 of the Working Draft (joint peer-review contribution) AND the full six-property chain audit schema (chain-id binding, originating-principal immutability, audit telemetry surface) targeted for v2.0 inclusion. (Verified 2026-06-15 against `/root/Defining_Non-Human_Identity.docx`.)
 **Discipline:** Every draft standard carries its version qualifier. Substrates 13/14/16 cited from public references only.
 
+> **AISVS citation note (updated 2026-06-24)**: The AISVS controls cited here shipped in OWASP AISVS v1.0 (released June 2026), in the Orchestration and Agentic Security chapter, renumbered for the release. Reversibility classification is C9.2.3 (Level 2), runtime enforcement by class is C9.2.4 (Level 2), and worst-case-across-chain is C9.2.10 (Level 3). Earlier wording in this artifact (manifest-declared, proposed for v1.01) is superseded by the shipped text. Verified against the released v1.0.
+
 ---
 
 ## The cross-walk axis
@@ -40,9 +42,9 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 
 | Substrate | Schema property / vocabulary | Status qualifier |
 |---|---|---|
-| **CoSAI WS4 ADLC (PR #117)** sample row | ADLC-AD-A03 "Reversibility taxonomy alignment per AISVS C9.2.6" (Mayur's PR #117 comment 2026-06-10) | Open PR comment |
-| **OWASP AISVS C9.2.6** | "manifest-declared reversibility classification" — actions carry a reversibility class (read-only / reversible / external-reversible / irreversible) declared in tool/action manifest | **Proposed for v1.01** (merged via PR #822 into AISVS research/ directory 2026-05-27) |
-| **OWASP AISVS C9.2.7** | "worst-case chain rule + blast-radius independent axis" — blast radius can only raise authority within a class | **Proposed for v1.01** (same PR) |
+| **CoSAI WS4 ADLC (PR #117)** sample row | ADLC-AD-A03 "Reversibility taxonomy alignment per AISVS C9.2.3" (Mayur's PR #117 comment 2026-06-10) | Open PR comment |
+| **OWASP AISVS C9.2.3** | "trusted reversibility classification" — actions carry a reversibility class (read-only / reversible / external-reversible / irreversible) declared in tool/action manifest | **Shipped in v1.0** |
+| **OWASP AISVS C9.2.10** | "worst-case chain rule + blast-radius independent axis" — blast radius can only raise authority within a class | **Shipped in v1.0** |
 | **OWASP AISVS C9.2.1-9.2.3** (v1.0 main chapter, post-2026-06-15 cleanup) | Execution gate + canonicalized parameters + cryptographic binding (former 9.2.4 compensating-actions requirement was removed in the PR #928 + #934 cleanup; Mohamad Khalil Yossif's 9.2.5 approval-evidence trust boundary proposed for v1.0 inclusion) | Published in AISVS v1.0 (release 2026-06-24) |
 | **CSA Agentic Trust Framework I-5** | "Capability Manifest" (one of 5 Core Elements + 25 reqs) | Public Review Draft v0.9.1 |
 | **CSA Agentic Trust Framework S-2** | "Action Boundaries" + S-5 "Blast Radius Containment" | Public Review Draft v0.9.1 |
@@ -71,7 +73,7 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 | **CSA NHI six-property schema property 6 (Mallikarjunarao)** | "Immutability of originating principal as schema property" | **NOT verbatim in v1.0; targeted for v2.0 inclusion (joint Mallikarjunarao Sunke)** |
 | **CSA Agentic Trust Framework I-3** | "Ownership Chain" (one of Identity Element 5 requirements) | Public Review Draft v0.9.1 |
 | **CSA NIST AI RMF Agentic Profile AG-MS.3** | "Delegation Chain Integrity" | CSA Labs draft March 2026 |
-| **OWASP AISVS C9.2.7** | "worst-case classification governing across a multi-step chain" | **Proposed for v1.01** (merged 2026-05-27 into research/ directory) |
+| **OWASP AISVS C9.2.10** | "worst-case classification governing across a multi-step chain" | **Shipped in v1.0** |
 | **OWASP AISVS C9.4** | "Agent and Orchestrator Identity, Signing, Tamper-Evident Audit" (5 requirements, 9.4.1-9.4.5 — count revised in 2026-06-15 PR #928 + #934 cleanup) | Published in AISVS v1.0 |
 | **OWASP AISVS C9.5** | "Agent Authorization, Delegation, and Continuous Enforcement" (6 requirements, 9.5.1-9.5.6 — renumbered from former C9.6 in the 2026-06-15 PR #928 + #934 cleanup) | Published in AISVS v1.0 |
 | **A2A Protocol v1.0.1** | "Delegation chain" + AgentCard JWS + JCS signature verification + mTLS | Published 28 May 2026 |
@@ -107,21 +109,21 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 Where this cross-walk maps into ongoing CoSAI work:
 
 ### CoSAI WS4 PR #117 (ADLC Controls Checklist)
-- **Phase 3 Admission control rows** — ADLC-AD-A01 (Manifest signature verification) + ADLC-AD-A03 (Reversibility taxonomy alignment per AISVS C9.2.6 Proposed for v1.01)
-- **Phase 4 Runtime control rows** — ADLC-RT-I01 (Manifest-declared action class evaluation) + ADLC-RT-I02 (Worst-case chain rule per AISVS C9.2.7 Proposed for v1.01) + ADLC-RT-I04 (AARM-conformant runtime evidence stream per Errico arXiv 2602.09433)
+- **Phase 3 Admission control rows** — ADLC-AD-A01 (Manifest signature verification) + ADLC-AD-A03 (Reversibility taxonomy alignment per AISVS C9.2.3 Shipped in v1.0)
+- **Phase 4 Runtime control rows** — ADLC-RT-I01 (Manifest-declared action class evaluation) + ADLC-RT-I02 (Worst-case chain rule per AISVS C9.2.10 Shipped in v1.0) + ADLC-RT-I04 (AARM-conformant runtime evidence stream per Errico arXiv 2602.09433)
 - **Phase 5 Reflection / Phase 6 Maintenance** — composition with CSA NHI v1.0 four-element attribution language (para 222; joint Mayur + Mallikarjunarao Sunke) and the full six-property chain audit schema targeted for v2.0 inclusion
 
 ### CoSAI Risk Map (Issue #369)
-- **Controls → frameworks inversion** — when re-organized, the schema property-level cross-walks above become the operational lookup. AISVS C9.2.6/7, CSA NHI 6-property, AARM, IMDA Tools/Instructions all map to existing Risk Map controls (controlAgentExecutionBounds + controlAgentIntegrityManagement + controlAgentCredentialIsolation + controlOrchestratorAndRouteIntegrity).
+- **Controls → frameworks inversion** — when re-organized, the schema property-level cross-walks above become the operational lookup. AISVS C9.2.3/9.2.10, CSA NHI v1.0 four-element attribution (para 222; six-property formalization deferred to v2.0), AARM, IMDA Tools/Instructions all map to existing Risk Map controls (controlAgentExecutionBounds + controlAgentIntegrityManagement + controlAgentCredentialIsolation + controlOrchestratorAndRouteIntegrity).
 
 ### CoSAI WS4 #99 (Agent Credentials RFC)
-- **Schema composition** — the cross-walk composes AISVS C9.2.6/7 (Proposed for v1.01) + CSA NHI 6-property (internal IAM WG) + CSAI Foundation AARM (Errico arXiv 2602.09433) + delegation scope-narrowing patterns with the existing 8-co-author RFC scope.
+- **Schema composition** — the cross-walk composes AISVS C9.2.3/9.2.10 (Shipped in v1.0) + CSA NHI v1.0 four-element attribution at para 222 (joint Mallikarjunarao Sunke; six-property formalization deferred to v2.0) + CSAI Foundation AARM (Errico arXiv 2602.09433) + delegation scope-narrowing patterns with the existing 8-co-author RFC scope.
 
 ### CoSAI WS4 PR #116 (Identity Architecture Patterns)
 - **6-layer architecture composition** — action-class authority axis is orthogonal: flows into Layer 2 as declared class (AgentCard), through Layer 3 as OAuth scope claim, preserved in Layer 5 as actor claim (chain), audited in Layer 6 as verdict.
 
 ### CoSAI WS4 #113 (Multimodal Agentic Security)
-- **Tool design composition** — multimodal attack vectors (typographic/steganographic/adversarial perturbation/preprocessing exploit) cross-walk to AISVS C9.2.6 manifest-declared action class + Tool Design Principles 4 (Two-Stage Commit) + 5 (per-tool immutable audit).
+- **Tool design composition** — multimodal attack vectors (typographic/steganographic/adversarial perturbation/preprocessing exploit) cross-walk to AISVS C9.2.3 trusted reversibility class + Tool Design Principles 4 (Two-Stage Commit) + 5 (per-tool immutable audit).
 
 ### CoSAI WS1 (Supply Chain)
 - **SBOM + AIBOM convergence** — SPDX 3.0.1 AIPackage + SPDX 3.1-RC1 PRs (#1259 dataset size for EU AI Act + #1267 additionalInformation extensibility) + G7 BSI SBOM for AI 7-cluster + OWASP AOS AgBOM (extends CycloneDX/SWID/SPDX). Direct cross-walk to ws1-supply-chain risks-and-controls v1 + signing-ml-artifacts.
@@ -168,10 +170,10 @@ This section maps how the cross-walk composes with the full CoSAI ecosystem. The
 |---|---|
 | MCP Security paper v1 (Jan 2026) + V2 in flight (PR #108) | Cross-walk catalogs MCP 2025-11-25 spec (OAuth 2.1 + RFC 9728 + RFC 8707), explicitly distinguishing from community "MCP-I" label. |
 | Agentic Identity & Access Control paper (Apr 2026) | 6-layer pattern resolves to A1 Identity through A7 Observability. |
-| `mcp-secure-tool-design.md` (read-only / reversible / commit tool classes + Two-Stage Commit + L1/L2/L3 Autonomy Matrix) | Tool design classes compose with action-class authority A2 axis (read-only / reversible / external-reversible / irreversible per OWASP AISVS C9.2.6 Proposed for v1.01). |
-| PR #117 ADLC Controls Checklist (open) | Each control row resolves to a cross-walk substrate. Sample mappings: manifest-declared action class (AISVS C9.2.6), worst-case chain rule (AISVS C9.2.7), AARM evidence stream (Errico arXiv 2602.09433), signature verification (W3C VC 2.0 + DID Core), data-quality gate (policy-evaluation + external data-quality signal two-layer pattern). |
+| `mcp-secure-tool-design.md` (read-only / reversible / commit tool classes + Two-Stage Commit + L1/L2/L3 Autonomy Matrix) | Tool design classes compose with action-class authority A2 axis (read-only / reversible / external-reversible / irreversible per OWASP AISVS C9.2.3 Shipped in v1.0). |
+| PR #117 ADLC Controls Checklist (open) | Each control row resolves to a cross-walk substrate. Sample mappings: trusted reversibility class (AISVS C9.2.3), worst-case chain rule (AISVS C9.2.10), AARM evidence stream (Errico arXiv 2602.09433), signature verification (W3C VC 2.0 + DID Core), data-quality gate (policy-evaluation + external data-quality signal two-layer pattern). |
 | PR #116 Identity Architecture Playbook (WIP) | 6-layer pattern composes with action-class A2 axis cross-cuts (declared at Layer 2, gated at Layer 4, preserved at Layer 5, audited at Layer 6). |
-| #99 Agent Credentials RFC (accepted, 8 co-authors) | Cross-walk catalogs A2A v1.0.1 AgentCard (JWS+JCS+mTLS), W3C VC 2.0 + DID Core, MCP OAuth model, WIMSE WG drafts, CSA NHI 6-property chain audit schema (internal IAM WG joint with Mallikarjunarao Sunke). |
+| #99 Agent Credentials RFC (accepted, 8 co-authors) | Cross-walk catalogs A2A v1.0.1 AgentCard (JWS+JCS+mTLS), W3C VC 2.0 + DID Core, MCP OAuth model, WIMSE WG drafts, CSA NHI v1.0 four-element attribution language at para 222 (joint Mallikarjunarao Sunke; six-property formalization deferred to v2.0). |
 | #113 Multimodal Agentic Security RFC (accepted) | 4-technique taxonomy maps to A4 Blast-radius + A7 Observability axes. |
 | ADLC SIG (PR #101 merged 2026-06-01; 7-phase ownership locked 2026-06-03) | Cross-walk supports each of 7 phases via A1-A8 axis × H1-H12 risk mapping. Proposed 8th phase System Governance (Doyin Awofodu) extends A8. |
 | 12-category MCP threat taxonomy (MCP-T1 through T12) | Each threat resolves to one or more cross-walk A-axes + H-categories. |
@@ -210,9 +212,9 @@ Across the seven CoSAI organizational artifacts (TSC + 4 workstreams + secure-ai
 ## Citation discipline
 
 Every reference in this document carries its version-stamp qualifier:
-- **"Proposed for v1.01"** for AISVS C9.2.6 + C9.2.7 + Issue #828 (merged into research/ directory)
+- **"Shipped in v1.0"** for AISVS C9.2.3 + C9.2.10 + Issue #828
 - **"Public Review Draft v0.9.1"** for CSA Agentic Trust Framework
-- **"Internal CSA IAM WG joint Mayur + Mallikarjunarao Sunke; under review for v1.0"** for CSA NHI 6-property chain audit schema
+- **"CSA NHI v1.0 — four-element attribution language (delegator / agent / intent / actions) anchored at para 222 of the Working Draft (joint Mayur + Mallikarjunarao Sunke); full six-property formalization (chain-id binding, originating-principal immutability, audit telemetry surface) targeted for v2.0 inclusion"** — verified 2026-06-15 against `/root/Defining_Non-Human_Identity.docx`
 - **"Open PR / WIP / accepted"** for CoSAI WS4 PRs and Issues
 - **"Public Preview"** for OWASP AOS
 - **"Incubator v1.0-2026"** for OWASP AST10
@@ -228,7 +230,7 @@ Vendor-specific substrates are not cited in this artifact; the cross-walk is ven
 **Status:** Research lens cross-walking the agentic standards landscape. Not a standalone framework.
 
 **Contact:** Mayur021 on GitHub.
-**Joint credit anchor:** Mallikarjunarao Sunke (CSA NHI 6-property chain audit schema; internal CSA IAM WG joint work).
+**Joint credit anchor:** Mallikarjunarao Sunke (CSA NHI v1.0 four-element attribution language at para 222 anchored verbatim; six-property chain audit schema deferred to v2.0; verified 2026-06-15 against `/root/Defining_Non-Human_Identity.docx`).
 
 ---
 
