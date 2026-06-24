@@ -4,7 +4,7 @@ Quick-reference index of every substrate in the cross-walk with canonical URL + 
 
 For full schema-property mapping see [COSAI-FOCUSED-CROSSWALK.md](COSAI-FOCUSED-CROSSWALK.md). For worked examples see [EXAMPLES/](EXAMPLES/).
 
-> **Status note on substrate S19a (updated 2026-06-24)**: The AISVS C9.2.3 + C9.2.10 controls shipped in OWASP AISVS v1.0 (released June 2026), in the Orchestration and Agentic Security chapter, renumbered from the earlier proposal. The reversibility classification is C9.2.3, runtime enforcement by class is C9.2.4, and worst-case-across-chain is C9.2.10. Verified against the released v1.0.
+> **Status note on substrate S19a (updated 2026-06-24)**: The AISVS C9.2.3 + C9.2.10 controls shipped in OWASP AISVS v1.0 (released June 2026), in the Orchestration and Agentic Security chapter. The reversibility classification is C9.2.3, runtime enforcement by class is C9.2.4, and worst-case-across-chain is C9.2.10. Verify exact sub-control numbering against the released v1.0 before quoting.
 
 ---
 

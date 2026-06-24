@@ -6,7 +6,7 @@
 **Joint credit anchor:** Mallikarjunarao Sunke on the CSA NHI v1.0 four-element attribution language (delegator / agent / intent / actions) anchored at paragraph 222 of the Working Draft (joint peer-review contribution) AND the full six-property chain audit schema (chain-id binding, originating-principal immutability, audit telemetry surface) targeted for v2.0 inclusion. (Verified 2026-06-15 against `/root/Defining_Non-Human_Identity.docx`.)
 **Discipline:** Every draft standard carries its version qualifier. Substrates 13/14/16 cited from public references only.
 
-> **AISVS citation note (updated 2026-06-24)**: The AISVS controls cited here shipped in OWASP AISVS v1.0 (released June 2026), in the Orchestration and Agentic Security chapter, renumbered for the release. Reversibility classification is C9.2.3 (Level 2), runtime enforcement by class is C9.2.4 (Level 2), and worst-case-across-chain is C9.2.10 (Level 3). Earlier wording in this artifact (manifest-declared, proposed for v1.01) is superseded by the shipped text. Verified against the released v1.0.
+> **AISVS citation note (updated 2026-06-24)**: The AISVS controls cited here shipped in OWASP AISVS v1.0 (released June 2026), in the Orchestration and Agentic Security chapter. Reversibility classification is C9.2.3 (Level 2), runtime enforcement by class is C9.2.4 (Level 2), and worst-case-across-chain is C9.2.10 (Level 3). Earlier manifest-declared wording in this artifact is superseded by the shipped text. Verify exact sub-control numbering against the released v1.0 before quoting.
 
 ---
 
@@ -45,7 +45,7 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 | **CoSAI WS4 ADLC (PR #117)** sample row | ADLC-AD-A03 "Reversibility taxonomy alignment per AISVS C9.2.3" (Mayur's PR #117 comment 2026-06-10) | Open PR comment |
 | **OWASP AISVS C9.2.3** | "trusted reversibility classification" — actions carry a reversibility class (read-only / reversible / external-reversible / irreversible) declared in tool/action manifest | **Shipped in v1.0** |
 | **OWASP AISVS C9.2.10** | "worst-case chain rule + blast-radius independent axis" — blast radius can only raise authority within a class | **Shipped in v1.0** |
-| **OWASP AISVS C9.2.1-9.2.3** (v1.0 main chapter, post-2026-06-15 cleanup) | Execution gate + canonicalized parameters + cryptographic binding (former 9.2.4 compensating-actions requirement was removed in the PR #928 + #934 cleanup; Mohamad Khalil Yossif's 9.2.5 approval-evidence trust boundary proposed for v1.0 inclusion) | Published in AISVS v1.0 (release 2026-06-24) |
+| **OWASP AISVS C9.2.2 / C9.2.8** | Canonical parameter display (C9.2.2) + approvals cryptographically bound to the displayed action (C9.2.8) | Shipped in AISVS v1.0 |
 | **CSA Agentic Trust Framework I-5** | "Capability Manifest" (one of 5 Core Elements + 25 reqs) | Public Review Draft v0.9.1 |
 | **CSA Agentic Trust Framework S-2** | "Action Boundaries" + S-5 "Blast Radius Containment" | Public Review Draft v0.9.1 |
 | **CSA NIST AI RMF Agentic Profile AG-MP.1** | "Tool Risk Classification" (consequence scope, reversibility, auth, compositional risk) | CSA Labs draft March 2026 |
@@ -74,8 +74,8 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 | **CSA Agentic Trust Framework I-3** | "Ownership Chain" (one of Identity Element 5 requirements) | Public Review Draft v0.9.1 |
 | **CSA NIST AI RMF Agentic Profile AG-MS.3** | "Delegation Chain Integrity" | CSA Labs draft March 2026 |
 | **OWASP AISVS C9.2.10** | "worst-case classification governing across a multi-step chain" | **Shipped in v1.0** |
-| **OWASP AISVS C9.4** | "Agent and Orchestrator Identity, Signing, Tamper-Evident Audit" (5 requirements, 9.4.1-9.4.5 — count revised in 2026-06-15 PR #928 + #934 cleanup) | Published in AISVS v1.0 |
-| **OWASP AISVS C9.5** | "Agent Authorization, Delegation, and Continuous Enforcement" (6 requirements, 9.5.1-9.5.6 — renumbered from former C9.6 in the 2026-06-15 PR #928 + #934 cleanup) | Published in AISVS v1.0 |
+| **OWASP AISVS C9 (Orchestration and Agentic Security chapter)** | Agent and orchestrator identity, signing, and tamper-evident audit requirements; verify the exact sub-control numbering against the released v1.0 chapter before quoting | Published in AISVS v1.0 |
+| **OWASP AISVS C9.3** | "Component Isolation and Tool Authorization (enforcement outside the model's reasoning loop)" | Shipped in AISVS v1.0 |
 | **A2A Protocol v1.0.1** | "Delegation chain" + AgentCard JWS + JCS signature verification + mTLS | Published 28 May 2026 |
 | **IETF RFC 8693** | "Actor claims" in OAuth token exchange | Published RFC |
 | **WIMSE arch-07** | Section 3.3.9 — AI agents as delegated workloads inheriting upstream security context | WG I-D, March 2026 |
@@ -235,4 +235,4 @@ Vendor-specific substrates are not cited in this artifact; the cross-walk is ven
 ---
 
 <!-- Control-ID currency note -->
-> **Control-ID currency note:** AISVS C9 references in this document use the post-2026-06-15 v1.0 main chapter inventory (PR #928 + #934 cleanup). Earlier drafts referenced C9.7.x and C9.9.x sub-controls which were removed in the cleanup. Verify current main chapter before quoting any specific sub-ID.
+> **Control-ID currency note:** AISVS C9 references in this document are to the released v1.0 (Orchestration & Agentic Security chapter): C9.2.3, C9.2.4, C9.2.10 (reversibility controls), C9.2.2 / C9.2.8 (approval display and binding), and C9.3 (component isolation and tool authorization). Verify exact sub-control numbering against the released v1.0 before quoting.

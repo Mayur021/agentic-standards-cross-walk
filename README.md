@@ -11,7 +11,7 @@
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 **Status:** v1.1 research artifact — feedback welcome via Issues and PRs
 
-> **AISVS citation note (updated 2026-06-24)**: The AISVS controls cited here shipped in OWASP AISVS v1.0 (released June 2026) and were renumbered during the release. Reversibility classification is C9.2.3 (Level 2), runtime enforcement by class is C9.2.4 (Level 2), and the worst-case-across-chain rule is C9.2.10 (Level 3), all in the Orchestration and Agentic Security chapter. The least-privilege sandbox for locally launched MCP servers is C10.1.3 (Level 2). Earlier wording in this artifact (manifest-declared, proposed for v1.01) is superseded by the shipped text. Verified against the released v1.0.
+> **AISVS citation note (updated 2026-06-24)**: The AISVS controls cited here shipped in OWASP AISVS v1.0 (released June 2026). Reversibility classification is C9.2.3 (Level 2), runtime enforcement by class is C9.2.4 (Level 2), and the worst-case-across-chain rule is C9.2.10 (Level 3), all in the Orchestration and Agentic Security chapter. The least-privilege sandbox for locally launched MCP servers is C10.1.3 (Level 2). Earlier manifest-declared wording in this artifact is superseded by the shipped text. Verify exact sub-control numbering against the released v1.0 before quoting.
 
 ---
 
