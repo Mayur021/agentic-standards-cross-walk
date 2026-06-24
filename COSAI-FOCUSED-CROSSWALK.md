@@ -75,7 +75,7 @@ Harm taxonomy: NIST AI 600-1 GenAI Profile 12-risk (H1-H12).
 | **CSA NIST AI RMF Agentic Profile AG-MS.3** | "Delegation Chain Integrity" | CSA Labs draft March 2026 |
 | **OWASP AISVS C9.2.10** | "worst-case classification governing across a multi-step chain" | **Shipped in v1.0** |
 | **OWASP AISVS C9 (Orchestration and Agentic Security chapter)** | Agent and orchestrator identity, signing, and tamper-evident audit requirements; verify the exact sub-control numbering against the released v1.0 chapter before quoting | Published in AISVS v1.0 |
-| **OWASP AISVS C9.3** | "Component Isolation and Tool Authorization (enforcement outside the model's reasoning loop)" | Shipped in AISVS v1.0 |
+| **OWASP AISVS C9.5** | "Agent Authorization, Delegation, and Continuous Enforcement (access decisions enforced by a policy engine, never by the model; C9.5.3)" | Shipped in AISVS v1.0 |
 | **A2A Protocol v1.0.1** | "Delegation chain" + AgentCard JWS + JCS signature verification + mTLS | Published 28 May 2026 |
 | **IETF RFC 8693** | "Actor claims" in OAuth token exchange | Published RFC |
 | **WIMSE arch-07** | Section 3.3.9 — AI agents as delegated workloads inheriting upstream security context | WG I-D, March 2026 |
@@ -235,4 +235,4 @@ Vendor-specific substrates are not cited in this artifact; the cross-walk is ven
 ---
 
 <!-- Control-ID currency note -->
-> **Control-ID currency note:** AISVS C9 references in this document are to the released v1.0 (Orchestration & Agentic Security chapter): C9.2.3, C9.2.4, C9.2.10 (reversibility controls), C9.2.2 / C9.2.8 (approval display and binding), and C9.3 (component isolation and tool authorization). Verify exact sub-control numbering against the released v1.0 before quoting.
+> **Control-ID currency note:** AISVS C9 references in this document are to the released v1.0 (Orchestration & Agentic Security chapter): C9.2.3, C9.2.4, C9.2.10 (reversibility controls), C9.2.2 / C9.2.8 (approval display and binding), C9.3 (component isolation and tool authorization), and C9.5 (agent authorization and continuous enforcement; C9.5.3 enforces decisions outside the model). Verify exact sub-control numbering against the released v1.0 before quoting.
